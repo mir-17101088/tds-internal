@@ -42,6 +42,7 @@ open (Mir "screams": WHERE IS THE HOUSE STYLE) · under · harness (what a harne
 - https://campaign.thedailystar.net/energy-crisis/ (screenshots in `deck/img/energy-*.webp`, figures in the report sheets and the chain).
 
 ## Open
+0. **Mir looked at the deck early on 17 Nov and saw overlaps. Top priority for the next session: go through EVERY scene press by press and fix every overlap properly (a bubble over text or a panel, a sprite over text, a panel over a panel), then check again.** Already removed at his request: the 'He asked me to draw it this way' line (open) and the Martin da WhatsApp nudge (making). Do not bring them back.
 1. Mid-scene visual QA + 4K check (scheduled task `tds-deck-qa`), then `TALKING-POINTS.md`.
 2. The talk is now about 30 minutes if every line is played. Shortest cuts: `fired`, `labs`, `cheap`, `tools` (press `]` to skip a scene).
 3. Rehearse once with the clicker on the TV.

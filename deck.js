@@ -313,11 +313,11 @@ SC.open = {
       }, 2000);
     },
     function () {
-      /* Mir screams. (He never does. He asked for it to be drawn this way.) */
+      /* Mir screams. (He never does.) */
       P([{ s: M, t: 'WHAT is this AI slop?!', m: 'angry', al: 'br shout', f: function () { M.hop(); L.mood('panic'); L.emote('!', 'red'); L.go(250, 990, { speed: 1500, keep: 1 }); } },
         { s: M, t: 'WHERE IS THE HOUSE STYLE?!', m: 'angry', al: 'br shout', f: function () { $('oshout').classList.add('show'); stage.classList.add('quake'); M.arms('up'); L.size(13); L.mood('panic'); L.shake(); } },
         ['Eep.', 'panic', function () { stage.classList.remove('quake'); }],
-        ['For the record: he never shouts at me. He asked me to draw it this way.', 'wide', function () { $('oshout').classList.remove('show'); M.arms(); M.mood('smug'); L.size(20); }],
+        ['For the record: he never shouts at me.', 'wide', function () { $('oshout').classList.remove('show'); M.arms(); M.mood('smug'); L.size(20); }],
         ['He has a point, though. I had no rules. So you got the average of the internet.', 'sad', function () { M.mood(); }]], 'bl');
     },
     function () { P([['Ooh. House rules!', 'joy', function () { L.wear('fedora'); L.chip('Skill(daily-star-story)'); setCtx(60); M.mood('happy'); }], ['Logo top-left. One accent. Real phones.', 'happy'], ['Let me try that again. Watch!', 'joy']], 'bl'); },

@@ -276,7 +276,7 @@ SC.imagine = {
 };
 
 /* ================= MAKING: this deck, built the same way ================= */
-var NUDGES = ['Bigger mascot.', 'More chatter.', 'A line on every press.', 'The back arrow should go ONE step back.', 'End with Martin da’s WhatsApp.'];
+var NUDGES = ['Bigger mascot.', 'More chatter.', 'A line on every press.', 'The back arrow should go ONE step back.'];
 function nud(i) { var c = el('div', 'nudge', D.esc(NUDGES[i])); $('nudges').appendChild(c); void c.offsetWidth; c.classList.add('show'); }
 SC.making = {
   ctx: 100, lead: [470, 1012, 16], al: 'bl', bw: 620, hello: [['One more secret.', 'happy']],
