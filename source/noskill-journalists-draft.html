@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The journalists Bangladesh lost, and the justice that rarely came | The Daily Star</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #0b0b0d; color: #fff; font-family: Georgia, 'Times New Roman', serif; }
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 24px 100px;
+    overflow: hidden;
+    background: radial-gradient(ellipse at 50% 30%, #1d1d24 0%, #0b0b0d 70%);
+  }
+  .brand {
+    position: absolute; top: 24px; left: 32px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 700; letter-spacing: 2px; text-transform: uppercase; font-size: 14px;
+    color: #fff;
+  }
+  .grid {
+    position: absolute; inset: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(26px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    opacity: .35;
+    pointer-events: none;
+  }
+  .dot { width: 14px; height: 14px; border-radius: 50%; background: #444; margin: auto; transition: background .6s, transform .6s; }
+  .dot.c { background: #e63946; box-shadow: 0 0 10px #e63946; }
+  .content { position: relative; z-index: 2; max-width: 860px; }
+  .eyebrow {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #e63946; text-transform: uppercase; letter-spacing: 3px; font-size: 13px; margin-bottom: 20px;
+  }
+  h1 {
+    font-size: clamp(2.2rem, 6vw, 4.6rem);
+    line-height: 1.1;
+    font-weight: 700;
+    margin-bottom: 24px;
+    text-shadow: 0 2px 20px rgba(0,0,0,.7);
+  }
+  .dek {
+    font-size: clamp(1.05rem, 2vw, 1.3rem);
+    line-height: 1.55;
+    color: #d6d6da;
+    max-width: 700px;
+    margin: 0 auto 24px;
+  }
+  .byline { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 14px; color: #aaa; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 40px; }
+  .byline b { color: #fff; }
+  .stats { display: flex; gap: 48px; justify-content: center; flex-wrap: wrap; font-family: 'Helvetica Neue', Arial, sans-serif; }
+  .stat .n { font-size: clamp(2.5rem, 6vw, 4rem); font-weight: 800; color: #e63946; line-height: 1; }
+  .stat:nth-child(2) .n { color: #fff; }
+  .stat .l { font-size: 13px; color: #aaa; margin-top: 8px; max-width: 160px; }
+  .scroll {
+    position: absolute; bottom: 28px; left: 50%; transform: translateX(-50%);
+    font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: #999;
+    z-index: 2; text-align: center;
+  }
+  .scroll span { display: block; margin-top: 8px; animation: bob 1.6s infinite; font-size: 18px; }
+  @keyframes bob { 50% { transform: translateY(6px); } }
+  @media (max-width: 600px) { .brand { left: 20px; } .stats { gap: 28px; } }
+</style>
+</head>
+<body>
+<section class="hero">
+  <div class="brand">The Daily Star</div>
+  <div class="grid" id="grid" aria-hidden="true"></div>
+  <div class="content">
+    <div class="eyebrow">Special Report</div>
+    <h1>The journalists Bangladesh lost, and the justice that rarely came</h1>
+    <p class="dek">Most worked outside Dhaka, many as local correspondents and editors. Most of their cases have never reached a verdict. This is a record of each of them, and of where each case stands.</p>
+    <div class="byline">By <b>Mir Rownak</b></div>
+    <div class="stats">
+      <div class="stat"><div class="n" data-to="61">0</div><div class="l">journalists and media workers killed since 1972</div></div>
+      <div class="stat"><div class="n" data-to="14">0</div><div class="l">cases ended in a conviction</div></div>
+    </div>
+  </div>
+  <div class="scroll">Scroll<span>&#8595;</span></div>
+</section>
+
+<script>
+  // dot grid: 61 dots, 14 highlighted
+  var grid = document.getElementById('grid');
+  var cols = Math.ceil(grid.clientWidth / 36), total = cols * Math.ceil(grid.clientHeight / 36);
+  var dots = [];
+  for (var i = 0; i < total; i++) { var d = document.createElement('div'); d.className = 'dot'; grid.appendChild(d); dots.push(d); }
+  setInterval(function () {
+    var d = dots[Math.floor(Math.random() * dots.length)];
+    d.classList.toggle('c');
+  }, 250);
+
+  // count up
+  document.querySelectorAll('.n').forEach(function (el) {
+    var to = +el.dataset.to, cur = 0;
+    var t = setInterval(function () {
+      cur++; el.textContent = cur;
+      if (cur >= to) clearInterval(t);
+    }, 1400 / to);
+  });
+</script>
+</body>
+</html>

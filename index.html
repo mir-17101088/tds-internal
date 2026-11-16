@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vibe Coding, Engineered</title>
+<meta name="description" content="How an interactive Daily Star story gets made: an internal talk, told by the agent that builds them.">
+<meta name="author" content="Mir Rownak">
+<meta name="robots" content="noindex">
+<link rel="icon" href="img/logo.svg">
+<link rel="preload" href="fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="deck.css">
+<link rel="stylesheet" href="deck2.css">
+</head>
+<body>
+<div id="stage">
+
+<!-- OPEN -->
+<section class="slide" id="open" data-t="2:30" data-notes="• Mir types one prompt. The mascot drops out: this is the agent, and it narrates the talk.
+→ it fetches a page from that one prompt. Stop. 'Would you publish this?'
+• Warm-up, 90 seconds: hands up, who uses AI for words? For a chart or a page? One question: what makes you leave a story on your phone?
+→ Mir 'screams': what is this AI slop, where is the house style. (I never do this. I asked it to draw me this way.)
+→ it had no rules, so it gave the average of the internet.
+→ it loads the Daily Star Skill (the hat) and pulls the real page across. Same AI. A different engine.">
+  <div class="composer" id="comp"><span id="ptype"></span><i class="cur" id="pcur"></i><span class="send">&#8593;</span></div>
+  <div class="gen" id="gen">Generating a page…</div>
+  <div class="shot slop" id="slop"><img src="img/draft.webp" alt="Page generated from a plain chat prompt" width="1600" height="1000"></div>
+  <div class="shot real" id="real"><img src="img/journalists-hero.webp" alt="The published Journalists story" width="1600" height="1000"></div>
+  <div class="oshout" id="oshout">WHERE IS THE<br>HOUSE STYLE?!</div>
+  <div class="otitle" id="otitle"><h1>Same AI.<br>A different engine.</h1></div>
+</section>
+
+<!-- UNDER -->
+<section class="slide" id="under" data-t="1:00" data-notes="• Every interactive story is code underneath.
+→ it lifts the page: 3,465 lines of HTML, CSS and JavaScript in the Journalists story. Real count.
+→ the split, plus 1,593 lines of build and QA scripts. Nobody in this room has to read a line. Not even me.
+→ a map, a wall of faces, a moving river: same engine.">
+  <img class="logo" src="img/logo.svg" alt="The Daily Star">
+  <h2 class="split" data-say="Every story. Even the pretty ones.">Every story is <em>code underneath</em></h2>
+  <div class="peel">
+    <div class="codewall" id="codewall" data-say="Real lines from the story's js/story.js."><pre id="codepre"></pre></div>
+    <div class="upage" id="upage" data-say="The published page. Nobody sees the code behind it."><img src="img/journalists-hero.webp" alt="The Journalists story" width="1600" height="1000"></div>
+    <div class="fan" id="fan">
+      <img src="img/river-map.webp" alt="River Erosion satellite map" data-say="River Erosion: a satellite map that moves as you scroll.">
+      <img src="img/jx-faces.webp" alt="Journalists face wall" data-say="Journalists: every face is a case you can open.">
+      <img src="img/jx-map.webp" alt="Journalists map" data-say="A map of where each journalist was killed.">
+      <img src="img/rv-circles.webp" alt="River Erosion circles" data-say="Land lost, drawn to scale.">
+    </div>
+  </div>
+  <div class="ucount rev hid" id="ucount">
+    <b id="un">0</b>
+    <p class="ul">lines of HTML, CSS and JavaScript in the Journalists story</p>
+    <ul class="urows" id="urows">
+      <li class="rev hid">HTML <span>931</span></li>
+      <li class="rev hid">CSS <span>1,193</span></li>
+      <li class="rev hid">JavaScript <span>1,341</span></li>
+    </ul>
+    <p class="small rev hid" id="usmall" style="margin-top:14px">Plus 1,593 lines of build and QA scripts.</p>
+    <p class="uline" id="uline"></p>
+  </div>
+</section>
+
+<!-- HARNESS -->
+<section class="slide" id="harness" data-t="2:15" data-notes="• First, the word. A harness is the program around the AI: it hands it tools and lets it loop until the job is done.
+→ I TYPE the request (or press → and it types itself): 'Fix the hero on small phones.'
+→ in a browser chat (claude.ai, ChatGPT, AI Studio) it cannot see my files. I paste the CSS. I copy the answer back. I test it. I am the hands, the eyes and the test suite. Count the copy-pastes.
+→ same request in a harness: it reads the file, edits it, tests 53 screen sizes, looks at the screenshot. Copy-pastes: zero.
+• Same brain. The result is better because it can check its own work and try again.">
+  <img class="logo" src="img/logo.svg" alt="The Daily Star">
+  <h2 class="split" data-say="Same model. Hands make the difference.">Same AI. Now give it <em>hands.</em></h2>
+  <p class="def in"><b>Harness</b>The program wrapped around the AI. It hands it tools and lets it work in a loop until the job is done.</p>
+  <div class="hxlane in" id="hx-chat" style="--d:1" data-say="A chat window. I can only talk."><h3>Chat in a browser<span>claude.ai, ChatGPT, Google AI Studio</span></h3><p class="cp">Mir's copy-pastes <b id="cpn">0</b></p><div class="hxlog" id="hxl1"></div><div class="jar2" id="jar2"></div></div>
+  <div class="hxlane r in dim" id="hx-harn" style="--d:2" data-say="A harness. I can act."><h3>In a harness<span>Claude Code, Antigravity, Codex</span></h3><p class="cp">Mir's copy-pastes <b>0</b></p><div class="hxlog" id="hxl2"></div></div>
+  <p class="hxline rev hid" id="hxline">Same brain. The harness lets it act, check, and try again.</p>
+</section>
+
+<!-- TOOLS -->
+<section class="slide" id="tools" data-t="1:15" data-notes="• What is inside a harness: six things, one press each.
+→ Files → Terminal → Browser → CLAUDE.md → Skills → Sub-agents.
+• Each is something it can now do itself, not something you do for it.
+→ the makers: Anthropic, Google and OpenAI all ship one. Learn the pattern, not the brand.">
+  <img class="logo" src="img/logo.svg" alt="The Daily Star">
+  <h2 class="split" data-say="Six tools. Then it is an engine.">Six tools turn talk into <em>work</em></h2>
+  <div class="harness in" id="harness-ring" style="--d:1"><svg viewBox="0 0 900 720" id="hsvg"></svg></div>
+  <div class="tdesc in" style="--d:2">
+    <h3 id="th"></h3>
+    <p id="tp"></p>
+    <p class="tcode" id="tcode"></p>
+    <div class="makers rev hid" id="makers">
+      <div class="maker panel"><b>Claude Code</b><span>Anthropic</span></div>
+      <div class="maker panel"><b>Antigravity</b><span>Google</span></div>
+      <div class="maker panel"><b>Codex</b><span>OpenAI</span></div>
+    </div>
+    <p class="makers-note rev hid" id="mnote">Three makers, one pattern: a model in a loop, with tools.</p>
+  </div>
+</section>
+
+<!-- LOOP -->
+<section class="slide" id="loop" data-t="2:00" data-notes="• Now it builds. A real round from the Journalists story (HANDOVER.md, round 7).
+→ Plan → Edit → Check: 15 of 39 sizes fail → Inspect → Fix → Check again: 53 sizes, 0 fail → Inspect → Report.
+• In a chat window, you would have been the test suite.
+→ I tell it: push it yourself. It still asks (the permission box; press 1, 2 or 3).
+→ I get irritated. It shows me my own line from CLAUDE.md: 'Never deploy or push without asking.' Your hard rule, boss.">
+  <img class="logo" src="img/logo.svg" alt="The Daily Star">
+  <h2 class="split" data-say="I check my own work. Then someone else does.">Then it builds, and <em>checks its own work</em></h2>
+  <p class="def in"><b>Agentic loop</b>Plan, act, check, fix, repeat. No human in between.</p>
+  <div class="loop in" id="loopbox" style="--d:1">
+    <svg viewBox="0 0 700 700"><circle cx="350" cy="350" r="255" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="3"/>
+      <circle id="loopArc" cx="350" cy="350" r="255" fill="none" stroke="#D97757" stroke-width="6" stroke-linecap="round" stroke-dasharray="0 1603" transform="rotate(-90 350 350)" style="transition:stroke-dasharray .7s"/></svg>
+    <div class="core" data-say="The number I am trying to kill."><b id="lfail">?</b><span>screen sizes failing</span></div>
+  </div>
+  <div class="log panel in" data-say="My transcript. Every tool call, printed." id="log" style="--d:2"></div>
+  <div class="hardrule rev hid" id="hardrule"><small>CLAUDE.md · written by Mir</small><p>Big jobs: agree the plan before code. <b>Never deploy or push without asking.</b></p></div>
+</section>
+
+<!-- MD -->
+<section class="slide" id="md" data-t="2:00" data-notes="• The human part. I do not read the code. I read the .md files: plain-text notes we both read.
+→ CLAUDE.md (rules), BRIEF.md (the plan, agreed before code), HANDOVER.md (where we stopped), review files (what the checkers found).
+→ it proudly makes a giant number box. I type one line: 'No giant number boxes.' It is a rule forever.
+→ the nudging: logo left, right, left again. Small fixes, many rounds.
+→ review time: it buries me in reports. I lose patience: five lines, what needs ME?
+• Reading them is tiring. It still saves the hassle at review, and it beats reading 3,465 lines of code.">
+  <img class="logo" src="img/logo.svg" alt="The Daily Star">
+  <h2 class="split" data-say="Plain text. That is the whole interface.">Mir never reads the code. He reads <em>these.</em></h2>
+  <p class="def in"><b>.md file</b>A plain-text note. The one thing the human and the AI both read.</p>
+  <div class="mdcards" id="mdcards">
+    <div class="mdc" data-say="The rules. I read them before every session."><b>CLAUDE.md</b><span>The rules. Read before every session.</span></div>
+    <div class="mdc" data-say="The plan. Agreed before I write a line."><b>BRIEF.md</b><span>The plan. Agreed before any code.</span></div>
+    <div class="mdc" data-say="Where we stopped. What is left."><b>HANDOVER.md</b><span>Where we stopped. What is left.</span></div>
+    <div class="mdc" data-say="What the checkers found. He reads every one."><b>review/*.md</b><span>What the checkers found.</span></div>
+  </div>
+  <div class="mded panel rev hid" id="mded"><div class="bar">CLAUDE.md <small>Mir is editing</small></div><pre id="mdpre"></pre><pre class="new"><span id="mdnew"></span><i class="cr"></i></pre></div>
+  <div class="mdpage rev hid" id="mdpage"><img src="img/journalists-hero.webp" alt="" width="1600" height="1000"><img id="mdlogo" src="img/logo.svg" alt=""></div>
+  <div class="mdsum rev hid" id="mdsum"><b>summary.md</b> 5 lines</div>
+  <p class="mdline rev hid" id="mdline">Reading notes is tiring. It is still cheaper than reading 3,465 lines of code.</p>
+</section>
+
+<!-- TEAM -->
+<section class="slide" id="team" data-t="1:30" data-notes="• Big builds need a lead. It plans first and shows me who does what (plan mode).
+→ the plan: seven tasks, a model for each. I approve before a file changes.
+→ Haiku gets the literal work → Sonnet builds and checks → Opus keeps the design call.
+• Don't default everything to the strongest model: slow and wasteful.
+→ they work in parallel in their own memory; the lead gets a short report from each.
+→ the Android fix failed twice on Sonnet, so it escalates. Example breakdown for a story like River Erosion.">
+  <img class="logo" src="img/logo.svg" alt="The Daily Star">
+  <h2 class="split" data-say="A lead and a plan. In that order.">Big jobs need a <em>lead</em>, and a plan first</h2>
+  <p class="def in"><b>Sub-agent</b>A fresh helper with its own memory. One job, then a short report.</p>
+  <div class="plan panel in" data-say="My plan. Approved before I touch a file." id="plan" style="--d:1">
+    <div class="ph">Plan: who does what</div>
+    <ol id="planl"></ol>
+    <div class="pf"><span>Example breakdown, River Erosion</span><span>✓ plan approved</span></div>
+  </div>
+  <div class="lanes in" style="--d:2">
+    <div class="lane" id="lh" data-say="Small, fast, literal."><h3>Haiku<span>literal, repetitive</span></h3></div>
+    <div class="lane" id="ls" data-say="The builders. Most of the work."><h3>Sonnet<span>building, QA, debugging</span></h3></div>
+    <div class="lane" id="lo" data-say="Hard calls stay with me."><h3>Opus, the lead<span>design, hard calls</span></h3></div>
+  </div>
+  <p class="tcap rev hid" id="tcap">Their mess stays in their memory. The lead gets 25 lines.</p>
+</section>
+
+<!-- REVIEW -->
+<section class="slide" id="review" data-t="1:30" data-notes="• The agent that wrote the code is the worst judge of it.
+→ the builder: 'All done.' The lead: 'Show me the screenshot.' 'The tests pass!' 'The screenshot.' '…it works on MY screen.'
+→ 'This ain't right. Boss is not happy.' The small ones panic.
+→ a fresh reviewer who was not in the room checks 26 claims: 20 hold, 6 fail or partly.
+→ three findings. Source: a review of my own system (review/skeptic.md).
+→ a report is a claim. Look at the screenshots.">
+  <img class="logo" src="img/logo.svg" alt="The Daily Star">
+  <h2 class="split" data-say="Builders love their own work. That is the problem.">Don't let the builder <em>grade its own homework</em></h2>
+  <div class="rvl">
+    <div class="claim panel rev hid" id="claim"><b>The builder says</b><p>"Done. Everything checked and working."</p><span class="stamp" id="stamp">NOT QUITE</span></div>
+  </div>
+  <div class="rvr in" style="--d:1">
+    <div class="dots" id="dots" data-say="Each dot is a claim, checked against the files."></div>
+    <p class="rvcount" id="rvc">26 claims to check</p>
+    <ul class="finds" id="finds">
+      <li class="rev hid"><b>A rule contradicted the code.</b> "Hero text never fades", but the code fades the headline.</li>
+      <li class="rev hid"><b>Budgets that would have failed</b> the two best stories.</li>
+      <li class="rev hid"><b>The biggest memory cost</b> was missed by both earlier reviewers.</li>
+    </ul>
+  </div>
+  <p class="rvline rev hid" id="rvline">A report is a claim. Look at the screenshots.</p>
+</section>
+
+<!-- ARGUE -->
+<section class="slide" id="argue" data-t="1:30" data-notes="• Then the human reviews, and we argue. It does not just agree with me.
+→ round one, I am wrong: 'just load the font from Google'. It says no, and quotes my own rule. Who wrote that? You did.
+→ round two, I am right: its tests say 53 sizes, zero fail. I say it stutters on my old phone. It insists. I make it look at the real phone. 'Oh. You were right.'
+• A test can pass and the page can still feel wrong. That is why a human scrolls it, and why you want an AI that can say no.">
+  <img class="logo" src="img/logo.svg" alt="The Daily Star">
+  <h2 class="split" data-say="An AI that only agrees is useless to you.">It argues back. <em>Good.</em></h2>
+  <div class="score in" id="score" style="--d:1"><span>Claude</span><b id="scL">0</b><i>:</i><b id="scM">0</b><span>Mir</span></div>
+  <div class="exh panel rev hid" id="exh"><p id="exht"></p><small id="exhs"></small></div>
+  <p class="argline rev hid" id="argline">I do not agree to be polite. He does not trust me to be right. That is the system.</p>
+</section>
+
+<!-- FIRED -->
+<section class="slide" id="fired" data-t="0:50" data-notes="• Checking is noisy, and noise fills memory.
+→ the sub-agent's window fills with junk it will never need. It starts to lose the thread.
+→ 'Your context is full. Leave your notes. Contract over.' It goes; the 25-line report stays.
+→ a new one starts fresh, reads the notes and carries on.
+• Agents are replaceable because the state lives in the file, not in the agent.">
+  <img class="logo" src="img/logo.svg" alt="The Daily Star">
+  <h2 class="split" data-say="Harsh? The notes survive.">Agents are disposable. <em>Their notes are not.</em></h2>
+  <div class="win panel in" data-say="A helper has its own memory. It fills fast." id="win" style="--d:1"><div class="bar">Sub-agent's memory <small id="wst">not started</small></div><div class="gauge"><i id="wg"></i></div><div class="body" id="wb"></div></div>
+  <p class="note25 rev hid" id="note25">report.md · 25 lines · handed to the lead</p>
+  <p class="saq rev hid" id="saq">The agent is replaceable because the state is in the file.</p>
+</section>
+
+<!-- ROT -->
+<section class="slide" id="rot" data-t="1:15" data-notes="• First the word: context is everything it has read this session, counted in tokens (a token is about three-quarters of a word).
+• Look at the meter: this session has been filling the whole talk.
+→ 400K: my line. I start a fresh session here.
+→ 700K: early rules slip. The notes fall off.
+→ 1M: who am I, who are you. A missed rule is a broken page.
+• Try typing /compact: a summary, not a cure.">
+  <img class="logo" src="img/logo.svg" alt="The Daily Star">
+  <h2 class="split" data-say="Mine rots faster than yours.">Context is working memory, and <em>it rots</em></h2>
+  <p class="def in"><b>Context</b>Everything the AI has read this session, counted in tokens. A token is about ¾ of a word.</p>
+  <div class="rotl in" style="--d:1">
+    <p class="human pw">Read a very long report while juggling five tasks and you forget paragraph three. <em>For a person, a slip. For an AI building a production page, fatal.</em></p>
+    <div class="cells" id="cells" data-say="A million tokens. Sounds like a lot."></div>
+    <p class="limit">Each square is 10K tokens. The window holds 1M. <b>Outlined: my 400K line.</b></p>
+    <div class="ctxread"><span class="n" id="ctxn">0</span><span class="st" id="ctxs"></span></div>
+  </div>
+  <div class="rotr in" style="--d:2">
+    <p class="rulesh">What it was told at the start</p>
+    <ul class="rules" id="rules">
+      <li data-say="The reporting is the content. I don't rewrite the reporter.">Reporter's text verbatim</li>
+      <li data-say="A gap stays a gap. I never fill it with a guess.">Never invent a figure</li>
+      <li data-say="House shell. Same place on every story.">Logo top-left over the hero</li>
+      <li data-say="One accent, meaning one thing all story long.">One accent colour</li>
+      <li data-say="Readers are on small, old phones. I test there first.">Test down to 320 px</li>
+      <li data-say="No outside servers. Slow networks can't wait for them.">Nothing loaded from outside</li>
+      <li data-say="Old Android Chrome. If it breaks there, it is broken.">Old phones must work</li>
+      <li data-say="I ask every time. One yes covers one push.">Never publish without asking</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CLEAR -->
+<section class="slide" id="clear" data-t="1:30" data-notes="→ at 1M it tries to write its notes: garbage. A tired agent writes a bad handover.
+→ the real one, from the Journalists story: written before 400K, while it still remembers.
+→ the command line opens. Type /clear and Enter (or press → and it types itself).
+• Wipe. A fresh agent reads CLAUDE.md, then HANDOVER.md, and knows exactly where we are. Meter back to 3%.
+→ Global CLAUDE.md → Project CLAUDE.md → Decisions: never argued twice. I write these; it follows them.
+• Fresh memory, zero amnesia.">
+  <img class="logo" src="img/logo.svg" alt="The Daily Star">
+  <h2 class="split h-a">Too late to take notes <em>now</em></h2>
+  <h2 class="split h-b" data-say="Files do not forget.">So its memory lives in <em>files</em></h2>
+  <div class="layers" id="layers">
+    <button class="layer"><b>Global CLAUDE.md</b><span>How I work, on every project</span></button>
+    <button class="layer"><b>Project CLAUDE.md</b><span>This story's rules</span></button>
+    <button class="layer"><b>Decisions</b><span>Never argued twice</span></button>
+    <button class="layer"><b>HANDOVER.md</b><span>Zero amnesia at 400K</span></button>
+  </div>
+  <div class="exwrap"><div class="excerpt" id="excerpt" data-say="Plain text. That is all my memory is."></div><p class="memnote" id="memnote"></p></div>
+</section>
+
+<!-- CHEAP -->
+<section class="slide" id="cheap" data-t="0:40" data-notes="• The model is not the bottleneck any more. Knowing how to run it is.
+→ right-size the worker: don't send Opus to rename files.
+→ keep the memory small: fresh session at 400K, sub-agents for the mess, notes in files.
+→ keep the cache warm: that one gets its own slide.">
+  <img class="logo" src="img/logo.svg" alt="The Daily Star">
+  <h2 class="split" data-say="Know-how. That part is yours.">The model is not the bottleneck. <em>Know-how is.</em></h2>
+  <ul class="levers" id="levers">
+    <li class="rev hid"><b>Right-size the worker</b><span>Opus leads. Sonnet builds. Haiku does the literal work.</span></li>
+    <li class="rev hid"><b>Keep the memory small</b><span>Fresh session at 400K. Sub-agents take the mess. Notes go in files.</span></li>
+    <li class="rev hid"><b>Keep the cache warm</b><span>One word before minute 54.</span></li>
+  </ul>
+</section>
+
+<!-- CACHE -->
+<section class="slide" id="cache" data-t="2:00" data-notes="• Every message re-sends the whole conversation: every file, every line. In a 400K-token session that is about 300,000 words, each time.
+→ the cache is a bookmark: for one hour after my last message it keeps what it has already read and only reads the new part. Each message resets the hour.
+→ minute 54: it panics and asks me to type something. I TYPE 'continue' (or press →).
+→ warm again. That message re-used 400K tokens from the cache; cached tokens count at about a tenth.
+→ if I had gone for tea: minute 61, cold. Same message, the full 400K again: about ten times the cost.
+• One word bought back the hour, and about nine more messages of the same size from my usage limit. Six minutes of margin: that is why 54, not 60.
+• Illustration with a 400K session; the tenth is Anthropic's published rate for cached reads, or less.">
+  <img class="logo" src="img/logo.svg" alt="The Daily Star">
+  <h2 class="split" data-say="The cheapest word you will ever type.">One word at minute 54 <em>saves the hour</em></h2>
+  <p class="def in"><b>Cache</b>The AI's bookmark. For one hour after your last message, it keeps what it has already read.</p>
+  <div class="stk in" id="stk" style="--d:1" data-say="All of it. Every single message."><div class="sheets"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><p><b>400K tokens</b><span>This whole session: about 300,000 words, sent again with every message.</span></p></div>
+  <div class="clock rev hid" id="clock" data-say="One hour. Then I go cold.">
+    <svg viewBox="0 0 560 560"><circle cx="280" cy="280" r="235" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="40"/>
+      <circle cx="280" cy="280" r="235" fill="none" stroke="#E8312A" stroke-opacity=".3" stroke-width="40" stroke-dasharray="147.65 1476.5" transform="rotate(234 280 280)"/>
+      <circle id="clk" cx="280" cy="280" r="235" fill="none" stroke="#7d93b8" stroke-width="40" stroke-dasharray="0 1476.5" transform="rotate(-90 280 280)" style="transition:stroke .3s"/>
+      <line x1="280" y1="25" x2="280" y2="80" stroke="#E8312A" stroke-width="6" transform="rotate(324 280 280)"/></svg>
+    <div class="mid"><b id="mins">0</b><span>minutes since Mir's last message</span></div>
+  </div>
+  <p class="cst rev hid" id="cstate"></p>
+  <div class="bars rev hid" id="bars">
+    <h4>What one message costs</h4>
+    <div class="brw"><span>Sent at minute 54, cache warm</span><div class="btrack"><i id="bw"></i></div><b id="bwn"></b></div>
+    <div class="brw cold"><span>Sent at minute 61, cache cold</span><div class="btrack"><i id="bc"></i></div><b id="bcn"></b></div>
+    <p class="barnote" id="barnote"></p>
+  </div>
+  <p class="flask rev hid" id="flask">Like tea in a flask. Lid on: hot all hour. Lid off: you boil the kettle again.</p>
+</section>
+
+<!-- LABS -->
+<section class="slide" id="labs" data-t="0:45" data-notes="• None of this is my invention. It is what the labs publish about their own work.
+→ an agent is a model using tools in a loop → a lead and sub-agents in parallel → context is finite → a progress file bridges sessions.
+• Four posts from Anthropic's engineering blog; you have just watched all four.">
+  <img class="logo" src="img/logo.svg" alt="The Daily Star">
+  <h2 class="split" data-say="Go and read their engineering blog.">Not my trick. <em>It is how the labs build.</em></h2>
+  <div class="notes4">
+    <div class="pin rev hid"><p>An agent is a model using tools in a loop, steering its own work.</p><cite>Anthropic, "Building effective agents"</cite><u>You saw it: the loop</u></div>
+    <div class="pin rev hid"><p>A lead agent plans, then hands the work to sub-agents running in parallel.</p><cite>Anthropic, "How we built our multi-agent research system", June 2025</cite><u>You saw it: the lead and its helpers</u></div>
+    <div class="pin rev hid"><p>Context is a finite resource. Spend it with care.</p><cite>Anthropic, "Effective context engineering for AI agents"</cite><u>You saw it: the 400K line</u></div>
+    <div class="pin rev hid"><p>Every new session starts with no memory. A progress file bridges the gap.</p><cite>Anthropic, "Effective harnesses for long-running agents", November 2025</cite><u>You saw it: HANDOVER.md</u></div>
+  </div>
+  <p class="labline rev hid" id="labline">The industry is moving to agentic loops. This is the craft to learn.</p>
+</section>
+
+<!-- SKILL -->
+<section class="slide paper" id="skill" data-t="1:00" data-notes="• Back to the page from the start. A Skill is a folder of instructions the AI opens only when the job needs it.
+→ it drags the handle: left is the one-line prompt, right is with the Daily Star Visual Story Skill. You can drag it too.
+→ without: template look, big-number box, outside fonts, never tested on a phone. With: house type, one signature visual, built for old phones.
+→ what the Skill is: one 59-line file with 6 hard rules and an 8-step workflow, plus 17 reference files. Its first rule: the reporting is the content.">
+  <img class="logo" src="img/logo.svg" alt="The Daily Star">
+  <h2 class="split" data-say="One small file made that difference.">Same prompt. One had <em>the Skill.</em></h2>
+  <div class="ba in" id="ba" style="--d:1">
+    <img src="img/draft.webp" alt="Hero generated from a one-line prompt without the Skill" width="1600" height="1000">
+    <img class="after" id="baafter" src="img/journalists-hero.webp" alt="The live Journalists hero built with the Skill" width="1600" height="1000">
+    <div class="handle" id="bah"></div>
+    <span class="tag tl">One-line prompt, no Skill</span><span class="tag tr" id="tagr">With the Skill · live page</span>
+  </div>
+  <div class="notes6">
+    <div class="rev hid" id="sklists">
+      <h4>Without</h4>
+      <ul class="without"><li>Template look</li><li>Big-number box, dot-grid decoration</li><li>Fonts and charts from outside servers</li><li>Never tested on a phone</li></ul>
+      <h4>With the Skill</h4>
+      <ul class="with"><li>Logo top-left, house type</li><li>One signature visual</li><li>Self-hosted, built for old phones</li><li>Rules and QA from the first draft</li></ul>
+    </div>
+    <div class="skin rev hid" id="skin">
+      <p><b>SKILL.md, 59 lines.</b> Six hard rules, the house defaults, an eight-step workflow.</p>
+      <p><b>17 reference files,</b> opened only when a step needs them.</p>
+      <div class="refs" id="refs"><i>brief.md</i><i>signature.md</i><i>charts.md</i><i>motion.md</i><i>editorial.md</i><i>anti-slop.md</i><i>qa.md</i><i>evaluator.md</i><i>rounds.md</i><i>+ 8 more</i></div>
+      <p>Its first rule: <b>the reporting is the content.</b></p>
+    </div>
+  </div>
+</section>
+
+<!-- LEARN -->
+<section class="slide paper" id="learn" data-t="2:00" data-notes="• Publishing is not the end. After every story, and after the endless human review, I ask it three things: what did we do new this time, why, and will it help next time?
+→ it compares the story with the Skill and writes down the learnings. I read them, fix them, and then they are rules. We are both learning as we go.
+→ what that taught us. Before: one big standalone chart. One glance, then useless scrolling. Readers are busy and attention is short.
+→ now: step-synced charts. Scroll one: 61 journalists. Scroll two: 14 convictions. Scroll three: where the other 47 stand. (Real figures from the Journalists story.)
+• Every motion gives a new finding, so no scroll is wasted. Simplify first, then animate.">
+  <img class="logo" src="img/logo.svg" alt="The Daily Star">
+  <h2 class="split" data-say="Every story leaves the Skill a little smarter.">After every story, the Skill <em>learns</em></h2>
+  <div class="lloop in" id="lloop" style="--d:1"><div>Publish<small>the story goes live</small></div><div>People react<small>the desk, the bosses, readers</small></div><div>Mir asks<small>what was new? why? will it help again?</small></div><div>Skill updated<small>the next story starts smarter</small></div></div>
+  <div class="skdiff rev hid" id="skdiff" data-say="Learned from people, written down for next time."><div class="bar">SKILL.md <small>what this story taught us</small></div><pre id="skpre"></pre></div>
+  <div class="phone rev hid" id="phone" data-say="The numbers are real: the Journalists story."><div class="scr" id="scr"><div class="scrin"><p id="phcap"></p><div class="d61" id="d61"></div><div class="filler"><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u></div></div></div></div>
+  <p class="lline rev hid" id="lline">Every scroll, a new finding. Nobody scrolls for nothing.</p>
+</section>
+
+<!-- YOU -->
+<section class="slide" id="you" data-t="1:00" data-notes="• If you're thinking this isn't for you: it is. You don't need to code.
+→ Reporters → Editors → Designers → Developers.
+→ the pipeline lights up: exactly how both stories were built. Count the steps where somebody writes code by hand: zero.">
+  <img class="logo" src="img/logo.svg" alt="The Daily Star">
+  <h2 class="split" data-say="You. Yes, you.">You don't need to code to <em>do this</em></h2>
+  <div class="roles">
+    <div class="role panel rev hid" data-say="You bring the story. I never invent a figure."><span class="k">Reporters</span><b>Bring the story and the data</b><p>The AI never invents a figure. Yours is the only source.</p></div>
+    <div class="role panel rev hid" data-say="Fresh eyes catch what the builder missed."><span class="k">Editors</span><b>Be the reviewer</b><p>Fresh eyes are the guardrail. That's already your job.</p></div>
+    <div class="role panel rev hid" data-say="Write your taste down once. I follow it on every story."><span class="k">Designers</span><b>Write the Skill</b><p>Your taste, written down once, used on every story.</p></div>
+    <div class="role panel rev hid" data-say="You run me: plan, verify, publish."><span class="k">Developers</span><b>Run the harness</b><p>Orchestrate, verify, publish.</p></div>
+  </div>
+  <div class="pipe" id="pipe" data-say="Six steps. The same every time."><div>Skill<small>house rules</small></div><div>Brief<small>agreed before code</small></div><div>Lead<small>Opus plans</small></div><div>Sub-agents<small>Sonnet, Haiku build</small></div><div>Reviewer<small>fresh eyes</small></div><div>Handover<small>zero amnesia</small></div></div>
+  <p class="final rev hid" id="final">Nobody in this pipeline <em>writes code by hand.</em></p>
+</section>
+
+<!-- IMAGINE -->
+<section class="slide" id="imagine" data-t="1:15" data-notes="→ it asks the room one question, the way Claude Code asks when unsure: what do you want to build? Pick one (1 to 4).
+→ space → a forest → a river: three ideas, drawn live. (Ideas, not stories we have made.)
+→ swap the Skill and the same engine builds a game, a dashboard, a lesson.
+• You are bounded only by your imagination.">
+  <div class="world wspace" id="wspace"></div><div class="world wforest" id="wforest"></div><div class="world wriver" id="wriver"></div>
+  <img class="logo" src="img/logo.svg" alt="The Daily Star">
+  <h2 class="split" data-say="Anything you can describe.">So. What do <em>you</em> want to build?</h2>
+  <div class="idea rev hid" id="idea"><span>An idea. Nobody has built it yet.</span><b id="ideat"></b></div>
+  <p class="final2 rev hid" id="final2">You are bounded only by your imagination.</p>
+</section>
+
+<!-- MAKING -->
+<section class="slide" id="making" data-t="1:30" data-notes="• How this presentation was made: the same pipeline. It is a web page.
+→ version one was 13 slides of text. Fine, forgettable.
+→ then I thought: what if I make Claude come to life?
+→ and I kept pushing: bigger mascot, more chatter, a line on every press, one step back, the WhatsApp ending.
+→ helpers checked every press and every screen; a handover file carried it from night to night.
+→ last night I sent one very long message and went to sleep. It built the ending while I slept.
+• So the bottleneck was never the code. It was the idea. Imagination, here too.">
+  <img class="logo" src="img/logo.svg" alt="The Daily Star">
+  <h2 class="split" data-say="You are looking at a web page.">This deck was built <em>the same way</em></h2>
+  <p class="selfc rev hid" id="selfc">This deck: <b id="selfn"></b> lines of code. Mir wrote none of them.</p>
+  <div class="v1 rev hid" id="v1" data-say="The first version. All text."><img src="img/v1.webp" alt="The first version of this deck: a text slide" width="1280" height="800"><span>Version one: text on slides.</span></div>
+  <div class="nudges" id="nudges"></div>
+  <p class="mkline rev hid" id="mkline">The bottleneck was never the code. It was the idea.</p>
+</section>
+
+<!-- ENERGY -->
+<section class="slide" id="energy" data-t="1:15" data-notes="• Imagination is not only for pretty topics. The energy story arrived as more than 50 reports: numbers and dates. How much gas we were short, when a terminal was knocked out.
+→ alone, each one is a yawn. I read every one of them.
+→ the job was finding the thread: each step follows from the one before. Fields run down → imports → two terminals → Hormuz → the 21 July fire → 57% of demand → factories and lights.
+→ then it gets built: 'Running on Empty', live on campaign.thedailystar.net/energy-crisis.
+• People scroll because they want to know 'okay, what's next?'. The engine is new. The storytelling is still ours.">
+  <img class="logo" src="img/logo.svg" alt="The Daily Star">
+  <h2 class="split" data-say="The boring ones are the best test.">Even a pile of numbers <em>can be a story</em></h2>
+  <div class="reports" id="reports"></div>
+  <ol class="chain" id="chain">
+    <li>Gas fields run down</li>
+    <li>Imports fill the gap</li>
+    <li>Two floating terminals carry it all</li>
+    <li>Hormuz closes. Qatar halves deliveries</li>
+    <li>21 July: a fire knocks out one terminal</li>
+    <li>The country meets 57% of demand</li>
+    <li>Factories slow. The lights go out</li>
+  </ol>
+  <div class="efan" id="efan">
+    <img src="img/energy-hero.webp" alt="Running on Empty: the energy story's opening" width="1280" height="800" data-say="Running on Empty. The live page.">
+    <img src="img/energy-map.webp" alt="Map of where the gas came from" width="1280" height="800" data-say="Where the gas came from instead.">
+    <img src="img/energy-terminal.webp" alt="Diagram of the terminal fire" width="1280" height="800" data-say="21 July. One terminal out.">
+    <img src="img/energy-shed.webp" alt="Map of load shedding by zone" width="1280" height="800" data-say="Load shedding, zone by zone.">
+  </div>
+  <p class="eline rev hid" id="eline">The engine is new. The craft is not: make them ask “okay, what’s next?”</p>
+</section>
+
+<!-- FINALE -->
+<section class="slide" id="finale" data-t="1:00" data-notes="• Say nothing. Press once more after 'Bye!' and let it play (about 35 seconds, no clicks).
+→ Martin da: publish today. Confidence.
+→ Zyma apu: a few design changes. Panic; the helpers arrive and run.
+→ Arshif bhai: make the logo sticky. 'AGAIN?!'
+• The three messages stay on screen. Thank you. Questions.">
+  <svg class="road" viewBox="0 0 1920 1080" aria-hidden="true"><rect x="0" y="640" width="1920" height="440" fill="#0C1226"/><path d="M0 640H1920" stroke="rgba(255,255,255,.22)" stroke-width="3"/><path d="M430 1080L940 640M1490 1080L980 640" stroke="rgba(255,255,255,.2)" stroke-width="4" fill="none"/><path d="M960 1080V640" stroke="rgba(255,255,255,.16)" stroke-width="6" stroke-dasharray="46 40"/><g fill="#fff"><rect x="210" y="170" width="6" height="6"/><rect x="520" y="90" width="4" height="4"/><rect x="760" y="300" width="6" height="6"/><rect x="1010" y="150" width="4" height="4"/><rect x="330" y="420" width="4" height="4"/><rect x="1130" y="470" width="6" height="6"/><rect x="640" y="520" width="4" height="4"/><rect x="90" y="560" width="4" height="4"/></g></svg>
+  <img class="logo" src="img/logo.svg" alt="The Daily Star">
+  <div class="notifs" id="notifs"></div>
+  <p class="thanks rev hid" id="thanks">Thank you.</p>
+</section>
+
+<div id="wipe"></div>
+<div id="cast"></div>
+<div id="hud"><span id="hmode"></span><span id="hmsg"></span><span class="hctx" data-say="Everything I have read this session. The red tick is Mir's 400K line.">context <span class="hbar"><i id="hfill"></i></span><b id="hnum">0K</b>/ 1M</span></div>
+<div id="cmd"><div id="sug"></div><div id="cmdin"><span class="pr">&gt; </span><span id="cmdt"></span><i class="cr"></i><span class="gh" id="cmdg"></span></div></div>
+<div id="ask"></div>
+</div>
+<div id="notes"><div class="tm"><span id="ntime"></span><span id="nclock">00:00</span></div><div id="ntext"></div></div>
+<div id="help"></div>
+
+<script type="text/plain" id="codesrc">  'use strict';
+  var doc = document, root = doc.documentElement;
+  root.classList.add('js');
+  var TDS = global.TDS = global.TDS || {};
+  var conn = global.navigator.connection;
+  var reduce = global.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  TDS.reduce = reduce;
+  TDS.saveData = !!(conn && (conn.saveData || /^(slow-2g|2g|3g)$/.test(conn.effectiveType || '')));
+  var $$ = function (sel, ctx) { return Array.prototype.slice.call((ctx || doc).querySelectorAll(sel)); };
+  var idle = global.requestIdleCallback
+    ? function (f, ms) { global.requestIdleCallback(f, { timeout: ms || 1200 }); }
+    : function (f) { setTimeout(f, 60); };
+  function warn(e) { if (global.console) console.warn('TDS:', (e && e.message) || e); }
+  function assign(a, b) { for (var k in b) a[k] = b[k]; return a; }
+
+  /* ---- Reveal on enter (.reveal) --------------------------------------- */
+  if ('IntersectionObserver' in global && !reduce) {
+    var rio = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('is-in'); rio.unobserve(e.target); } });
+    }, { rootMargin: '0px 0px -12% 0px', threshold: 0.05 });
+    $$('.reveal').forEach(function (n) { rio.observe(n); });
+  } else {
+    $$('.reveal').forEach(function (n) { n.classList.add('is-in'); });
+  }
+
+  /* ---- Lazy work queue --------------------------------------------------
+     Charts and scene builds share one rule: start when the element is within
+     1.5 screens, after the fonts are ready (raced to 1.5 s, so text is measured
+     with the real face), in an idle slice, one job per slice, and never while a
+     scrubbed scene is mid-flight (one busy flag; the scrub's own onScrubComplete
+     restarts the queue, so nothing polls).                                  */
+  var queue = [], pending = false, busy = false, busyT = 0, busyAt = 0, fontsP = null, lio = null;
+  function fonts() {
+    return fontsP || (fontsP = Promise.race([
+      doc.fonts && doc.fonts.ready ? doc.fonts.ready : Promise.resolve(),
+      new Promise(function (r) { setTimeout(r, 1500); })
+    ]));
+  }
+  function drain() {
+    if (pending || !queue.length) return;
+    pending = true;
+    fonts().then(function () {
+      idle(function () {
+        pending = false;
+</script>
+<script src="mascot.js"></script>
+<script src="deck.js"></script>
+<script src="scenes2.js"></script>
+</body>
+</html>
