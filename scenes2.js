@@ -347,38 +347,38 @@ function lookUp(s, m) { s.look('r'); s.mood(m); s.emote('!', 'red'); }
 function runAway(s, u0, u1, x, y, dur, key) { s.hush(); s.el.style.zIndex = 1; s.mood('panic'); s.go(x, y, { dur: dur, ease: 'cubic-bezier(.5,0,.9,.6),linear' }); anim(u0, u1, dur * 1000, function (v) { s.size(v); }, key); }
 function finale() {
   var H = [S[0], S[1], S[2], S[3]], T = function (ms, fn) { later(fn, ms); };
-  hushAll(); L.mood('happy'); L.go(900, 992, { dur: 1.5 });
+  hushAll(); L.mood('happy'); L.go(850, 992, { dur: 1.5 });
   T(1000, function () { notif(0); });
   T(1900, function () { L.stop(); L.el.classList.remove('walk'); L.face(1); lookUp(L, 'wide'); lookUp(M, 'wide'); });
-  T(2700, function () { L.say('Today?', 1, 'bl'); });
-  T(4300, function () { L.wear('bag shades'); L.mood('cool'); L.say('Easy. The tests are green.', 1, 'bl'); });
+  T(2700, function () { L.say('Today?', 1, 'br'); });
+  T(4300, function () { L.wear('bag shades'); L.mood('cool'); L.say('Easy. The tests are green.', 1, 'br'); });
   T(6400, function () { M.mood('smug'); M.say('We have got this.', 1, 'br'); });
   T(9000, function () { notif(1); });
-  T(9900, function () { hushAll(); L.wear('bag'); lookUp(L, 'panic'); L.say('Oh no.', 1, 'bl'); lookUp(M, 'shock'); M.arms('up'); });
+  T(9900, function () { hushAll(); L.wear('bag'); lookUp(L, 'panic'); L.say('Oh no.', 1, 'br'); lookUp(M, 'shock'); M.arms('up'); });
   T(11000, function () { M.say('A FEW?!', 1, 'br shout'); });
-  T(12300, function () { M.hush(); L.say('I need to run the tests one final time!', 1, 'bl'); });
-  T(15300, function () { L.say('And change the dates! And the other files!', 1, 'bl'); H.forEach(function (s, i) { s.size(7).spawn(330 + i * 150 + (i > 1 ? 560 : 0), 1010, function () { lookUp(s, 'panic'); }); }); });
+  T(12300, function () { M.hush(); L.say('I need to run the tests one final time!', 1, 'br'); });
+  T(15300, function () { L.say('And change the dates! And the other files!', 1, 'br'); H.forEach(function (s, i) { s.size(7).spawn(330 + i * 150 + (i > 1 ? 560 : 0), 1010, function () { lookUp(s, 'panic'); }); }); });
   T(17300, function () {
     L.hush(); H[0].say('Design changes?!', 1); H[3].say('WHICH files?!', 1); M.mood('panic');
     runIv = every(function () { H.forEach(function (s, i) { s.go(160 + rnd(i, tick) * 1600, 960 + rnd(i, tick + 3) * 60, { speed: 760 }); }); M.go(1250 + rnd(9, tick) * 420, 1004, { speed: 640 }); tick++; }, 620);
   });
   T(20600, function () {
-    unsched(runIv); H.forEach(function (s) { s.hush(); }); L.say('RUN!', 1, 'bl shout');
+    unsched(runIv); H.forEach(function (s) { s.hush(); }); L.say('RUN!', 1, 'br shout');
   });
   T(21500, function () {
-    runAway(L, 18, 3.6, 960, 664, 3.4, 'fl'); H.forEach(function (s, i) { later(function () { runAway(s, 7, 1.6, 900 + i * 40, 668, 3.2, 'fh' + i); }, 250 + i * 160); });
+    runAway(L, 22, 5.5, 960, 668, 3.4, 'fl'); H.forEach(function (s, i) { later(function () { runAway(s, 7, 1.6, 900 + i * 40, 668, 3.2, 'fh' + i); }, 250 + i * 160); });
     M.go(1380, 1004, { speed: 700, face: -1 }); M.mood('wide'); M.arms();
   });
   T(25600, function () { notif(2); });
   T(26800, function () { L.mood('wide'); L.face(1); L.emote('!', 'red'); lookUp(M, 'shock'); });
-  T(27600, function () { L.say('AGAIN?!!!!', 1, 'mid shout'); });
+  T(27600, function () { L.say('AGAIN?!!!!', 1, 'br shout'); });
   T(29800, function () { L.hush(); L.mood('dizzy'); L.fall(); H.forEach(function (s) { s.poof(); }); M.say('…the logo.', 1, 'br'); });
   T(31300, function () { M.hush(); M.mood('sleep'); M.fall(); });
-  T(32600, function () { show($('thanks')); L.say('/clear', 1, 'mid tiny'); hmsg('Context left until auto-compact: 0%', true, true); });
+  T(32600, function () { show($('thanks')); L.say('/clear', 1, 'br tiny'); hmsg('Context left until auto-compact: 0%', true, true); });
 }
 var tick = 0;
 SC.finale = {
-  ctx: 990, cap: 60000, lead: [640, 992, 18], al: 'bl', bw: 620, hello: [['Alright. The presentation is over.', 'happy']],
+  ctx: 990, cap: 60000, lead: [600, 992, 22], al: 'br', bw: 620, hello: [['Alright. The presentation is over.', 'happy']],
   enter: function () { $('notifs').innerHTML = ''; hide($('thanks')); tick = 0; unsched(runIv); mirIn(1380, 1004, -1, 12); setCtx(990); },
   beats: [
     function () {

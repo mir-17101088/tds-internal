@@ -307,3 +307,13 @@ h2{font-size:70px}
 .levers b{font-size:44px}.levers span{font-size:31px}.levers{width:760px}
 .ba .tag{font-size:23px}.notes6 h4{font-size:24px}.notes6 li{font-size:25px}.refs i{font-size:19px}
 .role .k{font-size:23px}.role p{font-size:24px}.pipe div{font-size:25px}.pipe div small{font-size:20px}
+
+/* finale: bigger cards, and no speech bubble may ever touch them.
+   The cards own the top-right (x from 1116, y to about 620); the mascot and its helpers speak with
+   right-anchored bubbles that end left of x = 1100, and Mir's bubble sits below y = 660. */
+.notifs{top:40px;width:740px}
+.notif{padding:22px 26px 24px;margin-bottom:14px}
+.wa{width:80px;height:80px;border-radius:20px}
+.wa::before{left:18px;top:15px;width:44px;height:40px}
+.wa::after{left:19px;top:45px;width:18px;height:18px}
+.notif span{font-size:23px}.notif b{font-size:36px}.notif p{font-size:36px}

@@ -36,6 +36,8 @@ open (Mir "screams": WHERE IS THE HOUSE STYLE) · under · harness (what a harne
 - Figures are real: 3,465 lines, 53 sizes / 0 fail, 61 cases / 14 convictions / 11-25-9-2 (Journalists `data/cases.csv`), energy numbers from the published page. Cache: 1-hour TTL, 54 = six minutes of margin, "about a tenth" for cached tokens is an illustration on a 400K session (labelled on the slide).
 - The names in the finale (Martin da, Zyma apu, Arshif bhai) and their three messages are Mir's words; keep them exactly.
 
+- Finale (Mir, 17 Nov): bigger mascot (u 22) and bigger WhatsApp cards; **a speech bubble must never overlap a card**. Cards own the top-right; the mascot and helpers use right-anchored ('br') bubbles that end left of x = 1100; Mir's bubble stays below the cards. `python -I tools/finale_check.py` measures it.
+
 ## Sources added in v3
 - Mir's own `~/.claude/CLAUDE.md` (the hard rules quoted in loop, md, argue).
 - `Desktop/journalists/story/data/cases.csv` and `source/story.md` (61, 14, status counts).
