@@ -66,6 +66,7 @@
   function Clawd(cast, o) {
     o = o || {};
     this.cast = cast; this.u = o.u || 11; this.x = 0; this.y = 0; this.f = 1; this.base = 'idle'; this.lines = null; this.kind = o.kind || '';
+    this.vid = Clawd.made = (Clawd.made || 0) + 1; /* 1 = the lead; the voices tell the cast apart by this */
     var el = this.el = document.createElement('div');
     el.className = 'clawd gone' + (o.kind ? ' ' + o.kind : '');
     el.innerHTML = '<div class="cl-in"><div class="cl-b">' + (o.kind === 'mir' ? MIR : SPRITE) + '</div></div><div class="hit"></div><div class="emos"></div>' +
@@ -155,12 +156,14 @@
       var a = b.firstChild, gh = b.lastChild;
       if (Clawd.instant) { a.textContent = t; return; }
       gh.textContent = t; el.classList.add('talk');
-      this._ty = setInterval(function () { i += 2; a.textContent = t.slice(0, i); gh.textContent = t.slice(i); if (i >= t.length) { clearInterval(self._ty); el.classList.remove('talk'); } }, 26);
-      if (!hold) this._sh = Clawd.T.set(function () { self.hush(); }, Math.max(2600, t.length * 70 + 1400));
+      Clawd.voice.say(this, t);
+      this._ty = setInterval(function () { i += 2; a.textContent = t.slice(0, i); gh.textContent = t.slice(i); if (i >= t.length) { clearInterval(self._ty); if (!Clawd.voice.on(self)) el.classList.remove('talk'); } }, 26);
+      if (!hold) this._sh = Clawd.T.set(function () { self.hush(1); }, Math.max(2600, t.length * 70 + 1400));
     },
     /* one line; hold=true keeps it up until the next line */
     say: function (t, hold, align) { this._say(t, hold, align); return this; },
-    hush: function () { clearInterval(this._ty); Clawd.T.clear(this._sh); this.bub.classList.remove('on'); this.el.classList.remove('talk'); return this; },
+    /* keep=true (a bubble timing out by itself) lets the voice finish the sentence */
+    hush: function (keep) { clearInterval(this._ty); Clawd.T.clear(this._sh); this.bub.classList.remove('on'); if (!keep) Clawd.voice.hush(this); if (!Clawd.voice.on(this)) this.el.classList.remove('talk'); return this; },
     /* a tool call floating up beside the sprite, the way the terminal prints one */
     chip: function (t) {
       if (Clawd.instant) return this;
@@ -199,6 +202,105 @@
     },
     /* fall apart into pixels */
     poof: function (then) { this.hide(); this._bits(true); if (then) { Clawd.T.clear(this._sp); this._sp = Clawd.T.set(then, 480); } return this; }
+  };
+  /* ---------- voices ----------
+     Every bubble is also spoken. The lines are recorded ahead of time with
+     neural voices (python tools/voices.py) as voice/<hash>.mp3, and
+     voice/lines.js lists them. They load in the background and play at once,
+     offline, the same on every computer. A line with no recording stays
+     silent. With no recordings at all, the computer's own speech engine reads
+     the line (robotic). One line is spoken at a time: a sprite's new line (or
+     its hush) cuts its old one; a line from somebody else waits for the
+     current one, and only the newest waiting line is kept.
+     mode: 2 everyone, 1 mascots only (Mir's avatar silent), 0 off. */
+  var SY = g.speechSynthesis, FILES = g.VOICE || null, BL = {}, VO = { mode: 2, vol: 1, cur: null, pend: null, tok: 0, cut: 0, v: {}, log: null, loaded: 0 };
+  try { var sm = localStorage.getItem('deckVoice'); if (sm !== null) VO.mode = +sm; else if (navigator.webdriver) VO.mode = 0; } catch (e) {}
+  var KEEP = /^(AI|QA|TTL|OK|CSS|JS|HTML|SEO|PDF|TV|TDS|URL|API|UI|JSON|SVG|CDN|PR|FAQ|MD)$/;
+  function vkind(c) { return c.kind === 'mir' ? 'mir' : c.vid > 1 ? 'help' : 'lead'; }
+  /* the name of a line's recording: who says it + the exact bubble text */
+  function vhash(s) { var h = 2166136261; for (var i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); } return (h >>> 0).toString(36); }
+  /* bubble text to something a speech engine reads well; shouted capitals become a louder, faster line */
+  function speakable(t) {
+    var loud = /\?!|!!/.test(t);
+    t = t.replace(/\b([A-Za-z]+)\.md\b/g, function (m, n) { return n.charAt(0) + n.slice(1).toLowerCase() + ' dot M D'; }).replace(/\.md\b/g, ' dot M D')
+      .replace(/\b[A-Z]{2,}\b/g, function (w) { if (KEEP.test(w)) return w; loud = true; return w.toLowerCase(); })
+      .replace(/(^|\s)\/([a-z]+)/g, '$1slash $2').replace(/(\d)\s?K\b/g, '$1 thousand').replace(/(\d)\s?M\b/g, '$1 million').replace(/(\d)\s?px\b/g, '$1 pixels')
+      .replace(/\bTk\b/g, 'taka').replace(/…/g, '...').replace(/[·→]/g, ', ').replace(/[*_]/g, '').replace(/\?!+/g, '?!').replace(/!{2,}/g, '!').replace(/\s+/g, ' ').trim();
+    return { text: t.charAt(0).toUpperCase() + t.slice(1), loud: loud };
+  }
+  /* fetch the recordings in scene order, a few at a time, and keep them in memory */
+  function vload() {
+    if (!FILES || VO.loading || !g.fetch) return; VO.loading = true;
+    var list = Object.keys(FILES), i = 0;
+    function nx() {
+      if (i >= list.length) return; var h = list[i++];
+      fetch('voice/' + h + '.mp3').then(function (r) { return r.ok ? r.blob() : null; }).then(function (b) { if (b) { BL[h] = URL.createObjectURL(b); VO.loaded++; } nx(); }, nx);
+    }
+    for (var k = 0; k < 6; k++) nx();
+  }
+  function pickVoices() {
+    if (!SY) return;
+    var all = SY.getVoices().filter(function (v) { return /^en/i.test(v.lang); });
+    all.sort(function (a, b) { return (b.localService ? 1 : 0) - (a.localService ? 1 : 0); });
+    function find(res) { for (var i = 0; i < res.length; i++) for (var j = 0; j < all.length; j++) if (res[i].test(all[j].name)) return all[j]; return all[0] || null; }
+    VO.v.lead = VO.v.help = find([/Zira/, /Aria/, /Jenny/, /Samantha/, /Google US English/, /female/i]);
+    VO.v.mir = find([/David/, /Mark/, /Guy/, /Daniel/, /Google UK English Male/, /\bmale/i]);
+  }
+  if (FILES) { if (VO.mode) vload(); }
+  else if (SY) { pickVoices(); if (SY.addEventListener) SY.addEventListener('voiceschanged', pickVoices); }
+  function vdone(u) { if (VO.cur && VO.cur.u === u) { var c = VO.cur.c; VO.cur = null; clearTimeout(VO.wd); if (!c.el.querySelector('.gh').textContent) c.el.classList.remove('talk'); vdrain(); } }
+  function vstop() {
+    if (!VO.cur) return; var c = VO.cur.c, u = VO.cur.u; VO.cur = null; VO.tok++; clearTimeout(VO.wd);
+    try { if (u.pause) u.pause(); else { VO.cut = Date.now(); SY.cancel(); } } catch (e) {}
+    c.el.classList.remove('talk');
+  }
+  function vdrain() { if (VO.pend) { var p = VO.pend; VO.pend = null; vstart(p); } }
+  /* a recording */
+  function vplay(it) {
+    var c = it.c, a = new Audio(BL[it.h] || 'voice/' + it.h + '.mp3'); VO.tok++;
+    a.volume = VO.vol;
+    /* the six helpers share one set of recordings; a touch of speed keeps them apart */
+    if (vkind(c) === 'help') { a.preservesPitch = a.webkitPreservesPitch = false; a.playbackRate = 1 + (c.vid % 3) * .05; }
+    a.onplaying = function () { if (VO.cur && VO.cur.u === a) c.el.classList.add('talk'); };
+    a.onended = a.onerror = function () { vdone(a); };
+    VO.cur = { c: c, u: a };
+    var p = a.play(); if (p && p.catch) p.catch(function () { vdone(a); });
+    VO.wd = setTimeout(function () { if (VO.cur && VO.cur.u === a) { try { a.pause(); } catch (e) {} vdone(a); } }, 30000);
+  }
+  /* the computer's speech engine (only when there are no recordings) */
+  function vspeak(it) {
+    var tok = ++VO.tok, c = it.c, k = vkind(c);
+    var u = new SpeechSynthesisUtterance(it.s.text);
+    if (VO.v[k]) { u.voice = VO.v[k]; u.lang = VO.v[k].lang; } else u.lang = 'en-US';
+    u.pitch = (k === 'mir' ? .85 : k === 'help' ? 1.65 + (c.vid % 3) * .12 : 1.35) + (it.s.loud ? .15 : 0);
+    u.rate = (k === 'help' ? 1.2 : k === 'mir' ? 1 : 1.05) * (it.s.loud ? 1.1 : 1);
+    u.volume = VO.vol * (it.s.loud ? 1 : .88);
+    u.onstart = function () { if (VO.cur && VO.cur.u === u) c.el.classList.add('talk'); };
+    u.onend = u.onerror = function () { vdone(u); };
+    VO.cur = { c: c, u: u };
+    /* Chrome can drop a speak() that follows a cancel() in the same breath */
+    setTimeout(function () { if (tok === VO.tok) try { SY.speak(u); } catch (e) { vdone(u); } }, Date.now() - VO.cut < 120 ? 70 : 0);
+    /* an engine that never reports the end must not block the next line */
+    VO.wd = setTimeout(function () { if (VO.cur && VO.cur.u === u) { try { SY.cancel(); } catch (e) {} vdone(u); } }, it.s.text.length * 110 + 4000);
+  }
+  function vstart(it) { if (it.h) vplay(it); else vspeak(it); }
+  Clawd.voice = {
+    say: function (c, t) {
+      var it = { c: c }, ok = true;
+      if (FILES) { it.h = vhash(vkind(c) + '|' + t); ok = !!FILES[it.h]; }
+      else { it.s = speakable(t); ok = !!(SY && g.SpeechSynthesisUtterance && it.s.text); }
+      if (VO.log) VO.log(c, t, it.h, ok);
+      if (!VO.mode || (VO.mode === 1 && c.kind === 'mir')) return;
+      if (!ok) { if (VO.cur && VO.cur.c === c) { vstop(); vdrain(); } return; }
+      if (VO.cur && VO.cur.c !== c) { VO.pend = it; return; }
+      vstop(); VO.pend = null; vstart(it);
+    },
+    hush: function (c) { if (VO.pend && VO.pend.c === c) VO.pend = null; if (VO.cur && VO.cur.c === c) { vstop(); vdrain(); } },
+    on: function (c) { return !!(VO.cur && VO.cur.c === c); },
+    /* next mode; returns the label for the status line */
+    cycle: function () { this.set(VO.mode === 2 ? 1 : VO.mode === 1 ? 0 : 2); return ['Voices off', 'Voices: mascots only', 'Voices: everyone'][VO.mode]; },
+    set: function (m) { VO.mode = m; VO.pend = null; vstop(); if (m) vload(); try { localStorage.setItem('deckVoice', m); } catch (e) {} },
+    kind: vkind, hash: vhash, speakable: speakable, state: VO
   };
   g.Clawd = Clawd;
 })(window);

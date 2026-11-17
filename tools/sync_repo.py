@@ -8,6 +8,9 @@ for f in ['index.html', 'deck.css', 'deck2.css', 'mascot.js', 'deck.js', 'scenes
     shutil.copy2(DECK / f, REPO / f)
 for d in ['fonts', 'img']:
     shutil.copytree(DECK / d, REPO / d, dirs_exist_ok=True)
+# the recorded voices: replace the folder, so lines that were re-worded leave no stale file behind
+shutil.rmtree(REPO / 'voice', ignore_errors=True)
+shutil.copytree(DECK / 'voice', REPO / 'voice')
 (REPO / 'archive').mkdir(exist_ok=True)
 shutil.copy2(DECK / 'index-v1.html', REPO / 'archive' / 'index-v1.html')
 for d in ['tools', 'source']:

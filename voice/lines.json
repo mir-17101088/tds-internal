@@ -1,0 +1,6274 @@
+[
+{
+"h": "zg97rh",
+"k": "lead",
+"t": "Hey everyone, I am Claude.",
+"s": "Hey everyone, I am Claude.",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+8%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "h47llr",
+"k": "lead",
+"t": "Hi! On it.",
+"s": "Hi! On it.",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+8%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "1mzbocc",
+"k": "lead",
+"t": "Done!",
+"s": "Done!",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+8%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "1igbvry",
+"k": "lead",
+"t": "One prompt. One page. Pretty good, right?",
+"s": "One prompt. One page. Pretty good, right?",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "1ccacyt",
+"k": "mir",
+"t": "WHAT is this AI slop?!",
+"s": "What is this AI slop?!",
+"loud": true,
+"m": "angry",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"+19%",
+"+15Hz",
+"+30%"
+]
+},
+{
+"h": "qrw4di",
+"k": "mir",
+"t": "WHERE IS THE HOUSE STYLE?!",
+"s": "Where is the house style?!",
+"loud": true,
+"m": "angry",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"+19%",
+"+15Hz",
+"+30%"
+]
+},
+{
+"h": "15esanp",
+"k": "lead",
+"t": "Eep.",
+"s": "Eep.",
+"loud": false,
+"m": "panic",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+20%",
+"+22Hz",
+"+0%"
+]
+},
+{
+"h": "1pd3cbs",
+"k": "lead",
+"t": "For the record: he never shouts at me.",
+"s": "For the record: he never shouts at me.",
+"loud": false,
+"m": "wide",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+6%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "flwz98",
+"k": "lead",
+"t": "He has a point, though. I had no rules. So you got the average of the internet.",
+"s": "He has a point, though. I had no rules. So you got the average of the internet.",
+"loud": false,
+"m": "sad",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-12%",
+"-10Hz",
+"+0%"
+]
+},
+{
+"h": "87v4at",
+"k": "lead",
+"t": "Ooh. House rules!",
+"s": "Ooh. House rules!",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+8%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "vslcu6",
+"k": "lead",
+"t": "Logo top-left. One accent. Real phones.",
+"s": "Logo top-left. One accent. Real phones.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1w3ki52",
+"k": "lead",
+"t": "Let me try that again. Watch!",
+"s": "Let me try that again. Watch!",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+8%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "1c05xza",
+"k": "lead",
+"t": "THAT is us.",
+"s": "That is us.",
+"loud": true,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+15%",
+"+24Hz",
+"+30%"
+]
+},
+{
+"h": "1ox9ayq",
+"k": "mir",
+"t": "That is us.",
+"s": "That is us.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"+5%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1udd23c",
+"k": "lead",
+"t": "Same me. New rules.",
+"s": "Same me. New rules.",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "1morh9d",
+"k": "lead",
+"t": "Want to see a secret?",
+"s": "Want to see a secret?",
+"loud": false,
+"m": "idle",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+0%",
+"+0Hz",
+"+0%"
+]
+},
+{
+"h": "1tzbbxa",
+"k": "lead",
+"t": "Underneath: code.",
+"s": "Underneath: code.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "wza95o",
+"k": "lead",
+"t": "3,465 lines of it.",
+"s": "3,465 lines of it.",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "s78joq",
+"k": "lead",
+"t": "I wrote them. And I checked them.",
+"s": "I wrote them. And I checked them.",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "1u2i0du",
+"k": "lead",
+"t": "Nobody here has to read it.",
+"s": "Nobody here has to read it.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "jejm2f",
+"k": "lead",
+"t": "Not one line!",
+"s": "Not one line!",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+8%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "1ql97ea",
+"k": "lead",
+"t": "A map. A wall of faces.",
+"s": "A map. A wall of faces.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "11re1vd",
+"k": "lead",
+"t": "A river that moves.",
+"s": "A river that moves.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1idfnw3",
+"k": "lead",
+"t": "Describe it. I build it.",
+"s": "Describe it. I build it.",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+8%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "13aofbc",
+"k": "lead",
+"t": "Hello? In here I can only talk.",
+"s": "Hello? In here I can only talk.",
+"loud": false,
+"m": "confused",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-6%",
+"+7Hz",
+"+0%"
+]
+},
+{
+"h": "59f1p0",
+"k": "lead",
+"t": "First, a word: harness.",
+"s": "First, a word: harness.",
+"loud": false,
+"m": "think",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-7%",
+"-3Hz",
+"+0%"
+]
+},
+{
+"h": "16uo5u6",
+"k": "lead",
+"t": "It is the program around me. It hands me tools, and lets me keep going until the job is done.",
+"s": "It is the program around me. It hands me tools, and lets me keep going until the job is done.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1uowi5y",
+"k": "lead",
+"t": "Without one? Watch. Mir, ask me to fix something.",
+"s": "Without one? Watch. Mir, ask me to fix something.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "158eekd",
+"k": "lead",
+"t": "I cannot see your files. Can you paste the CSS?",
+"s": "I cannot see your files. Can you paste the CSS?",
+"loud": false,
+"m": "confused",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-6%",
+"+7Hz",
+"+0%"
+]
+},
+{
+"h": "1c7nqm3",
+"k": "mir",
+"t": "Fine. Copy. Paste.",
+"s": "Fine. Copy. Paste.",
+"loud": false,
+"m": "tired",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"-16%",
+"-9Hz",
+"+0%"
+]
+},
+{
+"h": "19prxns",
+"k": "lead",
+"t": "Try this version.",
+"s": "Try this version.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1vr9v2j",
+"k": "mir",
+"t": "Copy it back. Reload. Check my phone…",
+"s": "Copy it back. Reload. Check my phone...",
+"loud": false,
+"m": "tired",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"-16%",
+"-9Hz",
+"+0%"
+]
+},
+{
+"h": "okal9q",
+"k": "mir",
+"t": "Still broken at 320.",
+"s": "Still broken at 320.",
+"loud": false,
+"m": "angry",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"+12%",
+"+5Hz",
+"+0%"
+]
+},
+{
+"h": "1sy74rg",
+"k": "lead",
+"t": "Hmm. Can you send a screenshot?",
+"s": "Hmm. Can you send a screenshot?",
+"loud": false,
+"m": "confused",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-6%",
+"+7Hz",
+"+0%"
+]
+},
+{
+"h": "1iewhho",
+"k": "mir",
+"t": "I am the hands. The eyes. AND the test suite.",
+"s": "I am the hands. The eyes. and the test suite.",
+"loud": true,
+"m": "tired",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"-9%",
+"+1Hz",
+"+30%"
+]
+},
+{
+"h": "1pu6s2i",
+"k": "lead",
+"t": "Same request. This time, I have hands.",
+"s": "Same request. This time, I have hands.",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+8%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "1qnkzgl",
+"k": "lead",
+"t": "I read the file myself.",
+"s": "I read the file myself.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "6hnuel",
+"k": "lead",
+"t": "I edit it.",
+"s": "I edit it.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1k52py7",
+"k": "lead",
+"t": "I test it. 53 screen sizes.",
+"s": "I test it. 53 screen sizes.",
+"loud": false,
+"m": "think",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-7%",
+"-3Hz",
+"+0%"
+]
+},
+{
+"h": "zycjyu",
+"k": "lead",
+"t": "Zero fail. And I look at the screenshot myself.",
+"s": "Zero fail. And I look at the screenshot myself.",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+8%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "109moh6",
+"k": "lead",
+"t": "Fixed. Screenshots attached.",
+"s": "Fixed. Screenshots attached.",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "1hmr8a4",
+"k": "mir",
+"t": "Copy-pastes: zero. I drank my tea.",
+"s": "Copy-pastes: zero. I drank my tea.",
+"loud": false,
+"m": "smug",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"-1%",
+"+2Hz",
+"+0%"
+]
+},
+{
+"h": "17qm2y7",
+"k": "lead",
+"t": "Same brain.",
+"s": "Same brain.",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "e47o3g",
+"k": "lead",
+"t": "The harness is what lets me act, check, and try again.",
+"s": "The harness is what lets me act, check, and try again.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "evhgmo",
+"k": "lead",
+"t": "So what is IN a harness?",
+"s": "So what is in a harness?",
+"loud": true,
+"m": "think",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+0%",
+"+7Hz",
+"+30%"
+]
+},
+{
+"h": "1k1800d",
+"k": "lead",
+"t": "Six things. Watch.",
+"s": "Six things. Watch.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "60jafj",
+"k": "lead",
+"t": "Files!",
+"s": "Files!",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+8%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "1fg982k",
+"k": "lead",
+"t": "I read the story myself.",
+"s": "I read the story myself.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1h3pv37",
+"k": "lead",
+"t": "A terminal!",
+"s": "A terminal!",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+8%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "16ysn3w",
+"k": "lead",
+"t": "I run it. I see the errors.",
+"s": "I run it. I see the errors.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "vp6crn",
+"k": "lead",
+"t": "A browser!",
+"s": "A browser!",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+8%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "1hv89ym",
+"k": "lead",
+"t": "I look. Like a reader.",
+"s": "I look. Like a reader.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "wasy4z",
+"k": "lead",
+"t": "The rules.",
+"s": "The rules.",
+"loud": false,
+"m": "think",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-7%",
+"-3Hz",
+"+0%"
+]
+},
+{
+"h": "1waa6tv",
+"k": "lead",
+"t": "Read before every session.",
+"s": "Read before every session.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "dk8hvm",
+"k": "lead",
+"t": "My Daily Star hat!",
+"s": "My Daily Star hat!",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+8%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "uyzq7d",
+"k": "lead",
+"t": "House style: on.",
+"s": "House style: on.",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "1n5ypzh",
+"k": "lead",
+"t": "Helpers!",
+"s": "Helpers!",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+8%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "1x2pjdu",
+"k": "lead",
+"t": "They take the noisy work.",
+"s": "They take the noisy work.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "d1pcyu",
+"k": "lead",
+"t": "Three makers.",
+"s": "Three makers.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "i8sytg",
+"k": "lead",
+"t": "Same idea.",
+"s": "Same idea.",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "1l0otu8",
+"k": "lead",
+"t": "Ready. Watch me work.",
+"s": "Ready. Watch me work.",
+"loud": false,
+"m": "idle",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+0%",
+"+0Hz",
+"+0%"
+]
+},
+{
+"h": "byyltr",
+"k": "lead",
+"t": "First, a plan.",
+"s": "First, a plan.",
+"loud": false,
+"m": "think",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-7%",
+"-3Hz",
+"+0%"
+]
+},
+{
+"h": "hrnuw2",
+"k": "lead",
+"t": "Goal: the hero fits every screen.",
+"s": "Goal: the hero fits every screen.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "gchkah",
+"k": "lead",
+"t": "I open the real file.",
+"s": "I open the real file.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "kbpo9s",
+"k": "lead",
+"t": "Hero height: tied to the screen.",
+"s": "Hero height: tied to the screen.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1l2vfda",
+"k": "lead",
+"t": "Now I test it myself. 39 screens…",
+"s": "Now I test it myself. 39 screens...",
+"loud": false,
+"m": "think",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-7%",
+"-3Hz",
+"+0%"
+]
+},
+{
+"h": "mf5ik5",
+"k": "lead",
+"t": "15 FAIL?!",
+"s": "15 fail?!",
+"loud": true,
+"m": "panic",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+27%",
+"+32Hz",
+"+30%"
+]
+},
+{
+"h": "13amze4",
+"k": "lead",
+"t": "I open the screenshots.",
+"s": "I open the screenshots.",
+"loud": false,
+"m": "think",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-7%",
+"-3Hz",
+"+0%"
+]
+},
+{
+"h": "7fa6ko",
+"k": "lead",
+"t": "Title under the logo. Dek cut off.",
+"s": "Title under the logo. Dek cut off.",
+"loud": false,
+"m": "wide",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+6%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "k104xy",
+"k": "lead",
+"t": "Found it.",
+"s": "Found it.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1k2khko",
+"k": "lead",
+"t": "Fixing. Not guessing.",
+"s": "Fixing. Not guessing.",
+"loud": false,
+"m": "boss",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+10%",
+"+10Hz",
+"+0%"
+]
+},
+{
+"h": "943w85",
+"k": "lead",
+"t": "A fallback for old phones.",
+"s": "A fallback for old phones.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "15z6lrh",
+"k": "lead",
+"t": "Test again. 53 sizes now.",
+"s": "Test again. 53 sizes now.",
+"loud": false,
+"m": "think",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-7%",
+"-3Hz",
+"+0%"
+]
+},
+{
+"h": "pgwar8",
+"k": "lead",
+"t": "ZERO fail!",
+"s": "Zero fail!",
+"loud": true,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+15%",
+"+24Hz",
+"+30%"
+]
+},
+{
+"h": "214i7o",
+"k": "lead",
+"t": "I look again. To be sure.",
+"s": "I look again. To be sure.",
+"loud": false,
+"m": "think",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-7%",
+"-3Hz",
+"+0%"
+]
+},
+{
+"h": "10fv610",
+"k": "lead",
+"t": "Clean.",
+"s": "Clean.",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "1fen1dt",
+"k": "lead",
+"t": "I write what I did.",
+"s": "I write what I did.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "743156",
+"k": "lead",
+"t": "And what I did NOT re-run.",
+"s": "And what I did not re-run.",
+"loud": true,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+10%",
+"+16Hz",
+"+30%"
+]
+},
+{
+"h": "rfl7iq",
+"k": "lead",
+"t": "Not published.",
+"s": "Not published.",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "1izcmg",
+"k": "mir",
+"t": "Looks good. Push it. Do it yourself.",
+"s": "Looks good. Push it. Do it yourself.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"+5%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1661psh",
+"k": "lead",
+"t": "On it! One small thing first…",
+"s": "On it! One small thing first...",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "tjuc1m",
+"k": "lead",
+"t": "Your call. Every time.",
+"s": "Your call. Every time.",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "3ukehj",
+"k": "mir",
+"t": "I SAID do it yourself!",
+"s": "I said do it yourself!",
+"loud": true,
+"m": "angry",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"+19%",
+"+15Hz",
+"+30%"
+]
+},
+{
+"h": "zdof5p",
+"k": "lead",
+"t": "“Never deploy or push without asking.”",
+"s": "“Never deploy or push without asking.”",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "5n0scc",
+"k": "lead",
+"t": "Your hard rule, boss.",
+"s": "Your hard rule, boss.",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "1kqhk9z",
+"k": "mir",
+"t": "…I did write that.",
+"s": "...I did write that.",
+"loud": false,
+"m": "tired",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"-16%",
+"-9Hz",
+"+0%"
+]
+},
+{
+"h": "o2dbv6",
+"k": "lead",
+"t": "One yes covers one push. Every single time.",
+"s": "One yes covers one push. Every single time.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1ozzvzp",
+"k": "lead",
+"t": "He does not read my code. Nobody does.",
+"s": "He does not read my code. Nobody does.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "7ily32",
+"k": "lead",
+"t": "He reads these. Plain text notes.",
+"s": "He reads these. Plain text notes.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1ntxdk8",
+"k": "lead",
+"t": "The rules. The plan. Where we stopped. What the checkers found.",
+"s": "The rules. The plan. Where we stopped. What the checkers found.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1u9y3vp",
+"k": "mir",
+"t": "I write the first two. I read all four. Every round.",
+"s": "I write the first two. I read all four. Every round.",
+"loud": false,
+"m": "read",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"-2%",
+"-2Hz",
+"+0%"
+]
+},
+{
+"h": "hqbdr6",
+"k": "lead",
+"t": "Look what I made! A GIANT number box!",
+"s": "Look what I made! A giant number box!",
+"loud": true,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+15%",
+"+24Hz",
+"+30%"
+]
+},
+{
+"h": "8xu1d0",
+"k": "mir",
+"t": "No.",
+"s": "No.",
+"loud": false,
+"m": "angry",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"+12%",
+"+5Hz",
+"+0%"
+]
+},
+{
+"h": "lzfcbs",
+"k": "lead",
+"t": "“No giant number boxes.” …It is a rule now.",
+"s": "“No giant number boxes.” ...It is a rule now.",
+"loud": false,
+"m": "sad",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-12%",
+"-10Hz",
+"+0%"
+]
+},
+{
+"h": "q95jug",
+"k": "lead",
+"t": "He writes. I obey. Every session, forever.",
+"s": "He writes. I obey. Every session, forever.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1pk91yt",
+"k": "mir",
+"t": "Logo a bit to the left.",
+"s": "Logo a bit to the left.",
+"loud": false,
+"m": "think",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"-5%",
+"-3Hz",
+"+0%"
+]
+},
+{
+"h": "1ox8w75",
+"k": "lead",
+"t": "Done.",
+"s": "Done.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1jwt6eq",
+"k": "mir",
+"t": "Hmm. Back to the right.",
+"s": "Hmm. Back to the right.",
+"loud": false,
+"m": "think",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"-5%",
+"-3Hz",
+"+0%"
+]
+},
+{
+"h": "184jh6t",
+"k": "lead",
+"t": "…Done.",
+"s": "...Done.",
+"loud": false,
+"m": "tired",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-18%",
+"-9Hz",
+"+0%"
+]
+},
+{
+"h": "1gtj478",
+"k": "mir",
+"t": "Actually, left was better.",
+"s": "Actually, left was better.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"+5%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1ezwid9",
+"k": "lead",
+"t": "This is round seven. I counted.",
+"s": "This is round seven. I counted.",
+"loud": false,
+"m": "stern",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-7%",
+"-8Hz",
+"+0%"
+]
+},
+{
+"h": "19yituz",
+"k": "lead",
+"t": "Review time! Here is my report.",
+"s": "Review time! Here is my report.",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+8%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "ojkhz6",
+"k": "help",
+"t": "And the QA screenshots!",
+"s": "And the QA screenshots!",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+20%",
+"+42Hz",
+"+0%"
+]
+},
+{
+"h": "1xxbhr",
+"k": "help",
+"t": "And the fact-check! And three evaluations!",
+"s": "And the fact-check! And three evaluations!",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+20%",
+"+42Hz",
+"+0%"
+]
+},
+{
+"h": "1yiyptq",
+"k": "lead",
+"t": "And the speed runs. Both of them.",
+"s": "And the speed runs. Both of them.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "esvz9c",
+"k": "mir",
+"t": "ENOUGH!",
+"s": "Enough!",
+"loud": true,
+"m": "angry",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"+19%",
+"+15Hz",
+"+30%"
+]
+},
+{
+"h": "inlhmc",
+"k": "mir",
+"t": "Five lines. What needs ME?",
+"s": "Five lines. What needs me?",
+"loud": true,
+"m": "angry",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"+19%",
+"+15Hz",
+"+30%"
+]
+},
+{
+"h": "kekgoi",
+"k": "lead",
+"t": "Five lines. Three things need you.",
+"s": "Five lines. Three things need you.",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "1rjmft8",
+"k": "lead",
+"t": "Tiring? Yes.",
+"s": "Tiring? Yes.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "k2npft",
+"k": "lead",
+"t": "Still cheaper than reading 3,465 lines of code.",
+"s": "Still cheaper than reading 3,465 lines of code.",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "4bjwzc",
+"k": "mir",
+"t": "Barely.",
+"s": "Barely.",
+"loud": false,
+"m": "tired",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"-16%",
+"-9Hz",
+"+0%"
+]
+},
+{
+"h": "1d5tn82",
+"k": "lead",
+"t": "Big job. I need help.",
+"s": "Big job. I need help.",
+"loud": false,
+"m": "idle",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+0%",
+"+0Hz",
+"+0%"
+]
+},
+{
+"h": "15g7bde",
+"k": "lead",
+"t": "Plan first.",
+"s": "Plan first.",
+"loud": false,
+"m": "think",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-7%",
+"-3Hz",
+"+0%"
+]
+},
+{
+"h": "6eyb0g",
+"k": "lead",
+"t": "Nothing is touched yet.",
+"s": "Nothing is touched yet.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "9lr229",
+"k": "lead",
+"t": "Helpers! Line up!",
+"s": "Helpers! Line up!",
+"loud": false,
+"m": "boss",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+10%",
+"+10Hz",
+"+0%"
+]
+},
+{
+"h": "1v0vhyg",
+"k": "help",
+"t": "Ready!",
+"s": "Ready!",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+20%",
+"+42Hz",
+"+0%"
+]
+},
+{
+"h": "kje8m9",
+"k": "lead",
+"t": "You: the boring bits. Go!",
+"s": "You: the boring bits. Go!",
+"loud": false,
+"m": "boss",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+10%",
+"+10Hz",
+"+0%"
+]
+},
+{
+"h": "1hb3bv3",
+"k": "help",
+"t": "On it!",
+"s": "On it!",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+20%",
+"+42Hz",
+"+0%"
+]
+},
+{
+"h": "1gv1d2g",
+"k": "lead",
+"t": "You two: build it. Then test it!",
+"s": "You two: build it. Then test it!",
+"loud": false,
+"m": "boss",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+10%",
+"+10Hz",
+"+0%"
+]
+},
+{
+"h": "q045cd",
+"k": "help",
+"t": "Yes boss!",
+"s": "Yes boss!",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+20%",
+"+42Hz",
+"+0%"
+]
+},
+{
+"h": "b0bsjn",
+"k": "lead",
+"t": "The design call?",
+"s": "The design call?",
+"loud": false,
+"m": "think",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-7%",
+"-3Hz",
+"+0%"
+]
+},
+{
+"h": "gzcv84",
+"k": "lead",
+"t": "Mine.",
+"s": "Mine.",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "1xwcame",
+"k": "lead",
+"t": "Now they work.",
+"s": "Now they work.",
+"loud": false,
+"m": "think",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-7%",
+"-3Hz",
+"+0%"
+]
+},
+{
+"h": "ohhgtd",
+"k": "lead",
+"t": "My memory stays clean.",
+"s": "My memory stays clean.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "hxuswr",
+"k": "lead",
+"t": "Three reports!",
+"s": "Three reports!",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+8%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "zd3c9d",
+"k": "lead",
+"t": "25 lines each. Lovely.",
+"s": "25 lines each. Lovely.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1owx704",
+"k": "help",
+"t": "Two tries. Still janky…",
+"s": "Two tries. Still janky...",
+"loud": false,
+"m": "sad",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+0%",
+"+18Hz",
+"+0%"
+]
+},
+{
+"h": "1gyigmg",
+"k": "lead",
+"t": "Hand it up.",
+"s": "Hand it up.",
+"loud": false,
+"m": "boss",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+10%",
+"+10Hz",
+"+0%"
+]
+},
+{
+"h": "1vvk4cz",
+"k": "lead",
+"t": "Escalation is earned.",
+"s": "Escalation is earned.",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "1ocka9y",
+"k": "lead",
+"t": "Homework time.",
+"s": "Homework time.",
+"loud": false,
+"m": "idle",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+0%",
+"+0Hz",
+"+0%"
+]
+},
+{
+"h": "1wjgdl",
+"k": "help",
+"t": "All done, boss!",
+"s": "All done, boss!",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+20%",
+"+42Hz",
+"+0%"
+]
+},
+{
+"h": "2rlvn",
+"k": "lead",
+"t": "Show me the screenshot.",
+"s": "Show me the screenshot.",
+"loud": false,
+"m": "think",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-7%",
+"-3Hz",
+"+0%"
+]
+},
+{
+"h": "ch1m5w",
+"k": "help",
+"t": "The tests pass!",
+"s": "The tests pass!",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+20%",
+"+42Hz",
+"+0%"
+]
+},
+{
+"h": "1bh9kyu",
+"k": "lead",
+"t": "The screenshot.",
+"s": "The screenshot.",
+"loud": false,
+"m": "stern",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-7%",
+"-8Hz",
+"+0%"
+]
+},
+{
+"h": "8icj9g",
+"k": "help",
+"t": "…it works on MY screen.",
+"s": "...it works on my screen.",
+"loud": true,
+"m": "wide",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+25%",
+"+52Hz",
+"+30%"
+]
+},
+{
+"h": "1lheiv5",
+"k": "lead",
+"t": "Hmm.",
+"s": "Hmm.",
+"loud": false,
+"m": "think",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-7%",
+"-3Hz",
+"+0%"
+]
+},
+{
+"h": "v1ops2",
+"k": "lead",
+"t": "This ain't right.",
+"s": "This ain't right.",
+"loud": false,
+"m": "stern",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-7%",
+"-8Hz",
+"+0%"
+]
+},
+{
+"h": "rhyeku",
+"k": "lead",
+"t": "Boss is NOT happy!",
+"s": "Boss is not happy!",
+"loud": true,
+"m": "boss",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+17%",
+"+20Hz",
+"+30%"
+]
+},
+{
+"h": "1fmtb7c",
+"k": "help",
+"t": "Re-checking! Re-checking!",
+"s": "Re-checking! Re-checking!",
+"loud": false,
+"m": "panic",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+32%",
+"+50Hz",
+"+0%"
+]
+},
+{
+"h": "kjaz6j",
+"k": "lead",
+"t": "Get me fresh eyes.",
+"s": "Get me fresh eyes.",
+"loud": false,
+"m": "boss",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+10%",
+"+10Hz",
+"+0%"
+]
+},
+{
+"h": "h0jay3",
+"k": "lead",
+"t": "Someone who was not here.",
+"s": "Someone who was not here.",
+"loud": false,
+"m": "stern",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-7%",
+"-8Hz",
+"+0%"
+]
+},
+{
+"h": "2tbrkn",
+"k": "help",
+"t": "Fresh eyes. Files, please.",
+"s": "Fresh eyes. Files, please.",
+"loud": false,
+"m": "idle",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+12%",
+"+28Hz",
+"+0%"
+]
+},
+{
+"h": "17cg0w5",
+"k": "lead",
+"t": "A rule that fights the code!",
+"s": "A rule that fights the code!",
+"loud": false,
+"m": "wide",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+6%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "wok914",
+"k": "lead",
+"t": "Budgets our best stories fail.",
+"s": "Budgets our best stories fail.",
+"loud": false,
+"m": "sad",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-12%",
+"-10Hz",
+"+0%"
+]
+},
+{
+"h": "1haa7cr",
+"k": "lead",
+"t": "And nobody saw the memory cost.",
+"s": "And nobody saw the memory cost.",
+"loud": false,
+"m": "sad",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-12%",
+"-10Hz",
+"+0%"
+]
+},
+{
+"h": "6jbxit",
+"k": "lead",
+"t": "A report is a claim.",
+"s": "A report is a claim.",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "1e192of",
+"k": "lead",
+"t": "Fix the six.",
+"s": "Fix the six.",
+"loud": false,
+"m": "boss",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+10%",
+"+10Hz",
+"+0%"
+]
+},
+{
+"h": "1gf5rfa",
+"k": "help",
+"t": "On it…",
+"s": "On it...",
+"loud": false,
+"m": "sad",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+0%",
+"+18Hz",
+"+0%"
+]
+},
+{
+"h": "hycu13",
+"k": "lead",
+"t": "Sometimes he is wrong. I tell him.",
+"s": "Sometimes he is wrong. I tell him.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1fxfpo5",
+"k": "mir",
+"t": "Just load the font from Google. Faster to set up.",
+"s": "Just load the font from Google. Faster to set up.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"+5%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "15dim40",
+"k": "lead",
+"t": "No.",
+"s": "No.",
+"loud": false,
+"m": "stern",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-7%",
+"-8Hz",
+"+0%"
+]
+},
+{
+"h": "8ok3mk",
+"k": "lead",
+"t": "Readers on slow networks wait for that server. Sometimes it never answers.",
+"s": "Readers on slow networks wait for that server. Sometimes it never answers.",
+"loud": false,
+"m": "think",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-7%",
+"-3Hz",
+"+0%"
+]
+},
+{
+"h": "1no8s8g",
+"k": "mir",
+"t": "…who wrote that?",
+"s": "...who wrote that?",
+"loud": false,
+"m": "think",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"-5%",
+"-3Hz",
+"+0%"
+]
+},
+{
+"h": "2kbedx",
+"k": "lead",
+"t": "You did.",
+"s": "You did.",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "159rcw1",
+"k": "mir",
+"t": "Fine.",
+"s": "Fine.",
+"loud": false,
+"m": "tired",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"-16%",
+"-9Hz",
+"+0%"
+]
+},
+{
+"h": "lbvpr0",
+"k": "lead",
+"t": "53 screen sizes. Zero fail. It is finished.",
+"s": "53 screen sizes. Zero fail. It is finished.",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "192bd7w",
+"k": "mir",
+"t": "It stutters on my old phone.",
+"s": "It stutters on my old phone.",
+"loud": false,
+"m": "think",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"-5%",
+"-3Hz",
+"+0%"
+]
+},
+{
+"h": "9yrzx7",
+"k": "lead",
+"t": "My numbers say it is fine.",
+"s": "My numbers say it is fine.",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "ebvq9t",
+"k": "mir",
+"t": "Scroll it. On the ACTUAL phone.",
+"s": "Scroll it. On the actual phone.",
+"loud": true,
+"m": "angry",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"+19%",
+"+15Hz",
+"+30%"
+]
+},
+{
+"h": "qe4mjh",
+"k": "lead",
+"t": "…",
+"s": "...",
+"loud": false,
+"m": "think",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-7%",
+"-3Hz",
+"+0%"
+]
+},
+{
+"h": "oi17l5",
+"k": "lead",
+"t": "Oh. It stutters.",
+"s": "Oh. It stutters.",
+"loud": false,
+"m": "wide",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+6%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "1b7cvj8",
+"k": "lead",
+"t": "You were right. I was only right on paper.",
+"s": "You were right. I was only right on paper.",
+"loud": false,
+"m": "sad",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-12%",
+"-10Hz",
+"+0%"
+]
+},
+{
+"h": "1modtd5",
+"k": "lead",
+"t": "A test can pass and the page can still feel wrong.",
+"s": "A test can pass and the page can still feel wrong.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "xsaq8x",
+"k": "lead",
+"t": "That is why a human scrolls it. And why I do not just say yes.",
+"s": "That is why a human scrolls it. And why I do not just say yes.",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "102ea3q",
+"k": "lead",
+"t": "This helper has one job.",
+"s": "This helper has one job.",
+"loud": false,
+"m": "idle",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+0%",
+"+0Hz",
+"+0%"
+]
+},
+{
+"h": "yy4nk6",
+"k": "help",
+"t": "Checking everything!",
+"s": "Checking everything!",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+20%",
+"+42Hz",
+"+0%"
+]
+},
+{
+"h": "afdowg",
+"k": "lead",
+"t": "Watch its memory fill.",
+"s": "Watch its memory fill.",
+"loud": false,
+"m": "think",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-7%",
+"-3Hz",
+"+0%"
+]
+},
+{
+"h": "4u31lm",
+"k": "help",
+"t": "So… many… logs…",
+"s": "So... many... logs...",
+"loud": false,
+"m": "yawn",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-10%",
+"+18Hz",
+"+0%"
+]
+},
+{
+"h": "w1zquo",
+"k": "help",
+"t": "Screenshot 41… or 14?",
+"s": "Screenshot 41... or 14?",
+"loud": false,
+"m": "dizzy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+0%",
+"+33Hz",
+"+0%"
+]
+},
+{
+"h": "x01l4z",
+"k": "help",
+"t": "Who am I checking for?",
+"s": "Who am I checking for?",
+"loud": false,
+"m": "confused",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+6%",
+"+35Hz",
+"+0%"
+]
+},
+{
+"h": "1kabqez",
+"k": "lead",
+"t": "Hey. You're full.",
+"s": "Hey. You're full.",
+"loud": false,
+"m": "sad",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-12%",
+"-10Hz",
+"+0%"
+]
+},
+{
+"h": "1yb8f10",
+"k": "lead",
+"t": "Leave your notes.",
+"s": "Leave your notes.",
+"loud": false,
+"m": "boss",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+10%",
+"+10Hz",
+"+0%"
+]
+},
+{
+"h": "1kubivn",
+"k": "lead",
+"t": "Contract over.",
+"s": "Contract over.",
+"loud": false,
+"m": "boss",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+10%",
+"+10Hz",
+"+0%"
+]
+},
+{
+"h": "j66qso",
+"k": "help",
+"t": "But I…",
+"s": "But I...",
+"loud": false,
+"m": "panic",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+32%",
+"+50Hz",
+"+0%"
+]
+},
+{
+"h": "a0kc70",
+"k": "lead",
+"t": "Nothing personal.",
+"s": "Nothing personal.",
+"loud": false,
+"m": "sad",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-12%",
+"-10Hz",
+"+0%"
+]
+},
+{
+"h": "484o28",
+"k": "help",
+"t": "Hi! I'm new!",
+"s": "Hi! I'm new!",
+"loud": false,
+"m": "idle",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+12%",
+"+28Hz",
+"+0%"
+]
+},
+{
+"h": "1pmeksa",
+"k": "help",
+"t": "Notes read. Carrying on!",
+"s": "Notes read. Carrying on!",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+20%",
+"+42Hz",
+"+0%"
+]
+},
+{
+"h": "1glbyrr",
+"k": "lead",
+"t": "Fresh memory. Same notes.",
+"s": "Fresh memory. Same notes.",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "ioc8q2",
+"k": "lead",
+"t": "First: what is “context”?",
+"s": "First: what is “context”?",
+"loud": false,
+"m": "think",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-7%",
+"-3Hz",
+"+0%"
+]
+},
+{
+"h": "1b8lg0a",
+"k": "lead",
+"t": "Everything I have read today. Your messages. The files. My own work.",
+"s": "Everything I have read today. Your messages. The files. My own work.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "ycskfa",
+"k": "lead",
+"t": "It is counted in tokens. A token is about three-quarters of a word.",
+"s": "It is counted in tokens. A token is about three-quarters of a word.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "blut69",
+"k": "lead",
+"t": "350K already?",
+"s": "350 thousand already?",
+"loud": false,
+"m": "wide",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+6%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "189ips0",
+"k": "lead",
+"t": "Busy day.",
+"s": "Busy day.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1y6y0eu",
+"k": "lead",
+"t": "400K.",
+"s": "400 thousand.",
+"loud": false,
+"m": "think",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-7%",
+"-3Hz",
+"+0%"
+]
+},
+{
+"h": "1nsq8h1",
+"k": "lead",
+"t": "This is where Mir stops me.",
+"s": "This is where Mir stops me.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "co1w3o",
+"k": "lead",
+"t": "*yawn*",
+"s": "Yawn",
+"loud": false,
+"m": "yawn",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-22%",
+"-10Hz",
+"+0%"
+]
+},
+{
+"h": "1or2mu1",
+"k": "lead",
+"t": "What was rule one again?",
+"s": "What was rule one again?",
+"loud": false,
+"m": "tired",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-18%",
+"-9Hz",
+"+0%"
+]
+},
+{
+"h": "1ywh1qe",
+"k": "lead",
+"t": "The logo goes… bottom-right?",
+"s": "The logo goes... bottom-right?",
+"loud": false,
+"m": "confused",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-6%",
+"+7Hz",
+"+0%"
+]
+},
+{
+"h": "1cmacfl",
+"k": "lead",
+"t": "Who am I?",
+"s": "Who am I?",
+"loud": false,
+"m": "confused",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-6%",
+"+7Hz",
+"+0%"
+]
+},
+{
+"h": "lm3bgv",
+"k": "lead",
+"t": "Who are YOU?",
+"s": "Who are you?",
+"loud": true,
+"m": "dizzy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-5%",
+"+15Hz",
+"+30%"
+]
+},
+{
+"h": "1jfyg5w",
+"k": "lead",
+"t": "Is today the 31st of November?",
+"s": "Is today the 31st of November?",
+"loud": false,
+"m": "confused",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-6%",
+"+7Hz",
+"+0%"
+]
+},
+{
+"h": "js4tog",
+"k": "lead",
+"t": "We publish without asking… right?",
+"s": "We publish without asking... right?",
+"loud": false,
+"m": "dizzy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-12%",
+"+5Hz",
+"+0%"
+]
+},
+{
+"h": "1axc62u",
+"k": "lead",
+"t": "I should… write this down.",
+"s": "I should... write this down.",
+"loud": false,
+"m": "confused",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-6%",
+"+7Hz",
+"+0%"
+]
+},
+{
+"h": "qyd8og",
+"k": "lead",
+"t": "Must… write it down…",
+"s": "Must... write it down...",
+"loud": false,
+"m": "dizzy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-12%",
+"+5Hz",
+"+0%"
+]
+},
+{
+"h": "ivika",
+"k": "lead",
+"t": "Is this right?",
+"s": "Is this right?",
+"loud": false,
+"m": "confused",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-6%",
+"+7Hz",
+"+0%"
+]
+},
+{
+"h": "ceniyv",
+"k": "lead",
+"t": "That's the real one.",
+"s": "That's the real one.",
+"loud": false,
+"m": "tired",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-18%",
+"-9Hz",
+"+0%"
+]
+},
+{
+"h": "17y54c5",
+"k": "lead",
+"t": "Written at 400K. Not now.",
+"s": "Written at 400 thousand. Not now.",
+"loud": false,
+"m": "tired",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-18%",
+"-9Hz",
+"+0%"
+]
+},
+{
+"h": "10v8jut",
+"k": "lead",
+"t": "Type /clear.",
+"s": "Type slash clear.",
+"loud": false,
+"m": "tired",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-18%",
+"-9Hz",
+"+0%"
+]
+},
+{
+"h": "10xcoeh",
+"k": "lead",
+"t": "Go on. I'll be fine.",
+"s": "Go on. I'll be fine.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1dq4fzv",
+"k": "lead",
+"t": "See you on the other si",
+"s": "See you on the other si",
+"loud": false,
+"m": "tired",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-18%",
+"-9Hz",
+"+0%"
+]
+},
+{
+"h": "9pcfy7",
+"k": "lead",
+"t": "Hello! I am new here.",
+"s": "Hello! I am new here.",
+"loud": false,
+"m": "fresh",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+8%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "1aswnth",
+"k": "lead",
+"t": "RESUME HERE. Got it.",
+"s": "Resume here. Got it.",
+"loud": true,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+10%",
+"+16Hz",
+"+30%"
+]
+},
+{
+"h": "1bxqpgb",
+"k": "lead",
+"t": "Round 7c built and pushed.",
+"s": "Round 7c built and pushed.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "fyl8ap",
+"k": "lead",
+"t": "I know exactly where we are!",
+"s": "I know exactly where we are!",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+8%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "js4nn2",
+"k": "lead",
+"t": "Read first. Every session.",
+"s": "Read first. Every session.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1hr0xbd",
+"k": "lead",
+"t": "This story's rules.",
+"s": "This story's rules.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "b7pbun",
+"k": "lead",
+"t": "I follow them. Every time.",
+"s": "I follow them. Every time.",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "rwyxqw",
+"k": "lead",
+"t": "Settled.",
+"s": "Settled.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1xgw6jy",
+"k": "lead",
+"t": "I will not reopen them.",
+"s": "I will not reopen them.",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "15xztro",
+"k": "lead",
+"t": "I'm clever. Using me well is the hard part.",
+"s": "I'm clever. Using me well is the hard part.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1ny6b5q",
+"k": "lead",
+"t": "Three habits. You have seen two already.",
+"s": "Three habits. You have seen two already.",
+"loud": false,
+"m": "think",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-7%",
+"-3Hz",
+"+0%"
+]
+},
+{
+"h": "1sndbrq",
+"k": "lead",
+"t": "Big calls: me.",
+"s": "Big calls: me.",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "19vloet",
+"k": "help",
+"t": "I build.",
+"s": "I build.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+15%",
+"+34Hz",
+"+0%"
+]
+},
+{
+"h": "3nyuex",
+"k": "help",
+"t": "Boring bits! Fast!",
+"s": "Boring bits! Fast!",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+20%",
+"+42Hz",
+"+0%"
+]
+},
+{
+"h": "1p4s7qv",
+"k": "lead",
+"t": "Small memory.",
+"s": "Small memory.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1jpszf3",
+"k": "lead",
+"t": "Sharp me.",
+"s": "Sharp me.",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+8%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "1vxh8ra",
+"k": "lead",
+"t": "And keep me warm.",
+"s": "And keep me warm.",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "1lr558b",
+"k": "lead",
+"t": "That one saves the most. It gets its own slide.",
+"s": "That one saves the most. It gets its own slide.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1spwlf3",
+"k": "lead",
+"t": "The third habit: keep me warm.",
+"s": "The third habit: keep me warm.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1n5opfk",
+"k": "lead",
+"t": "Every message you send me, I get the WHOLE conversation again.",
+"s": "Every message you send me, I get the whole conversation again.",
+"loud": true,
+"m": "think",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+0%",
+"+7Hz",
+"+30%"
+]
+},
+{
+"h": "9pgaqd",
+"k": "lead",
+"t": "Every file. Every line. 400K tokens: about 300,000 words.",
+"s": "Every file. Every line. 400 thousand tokens: about 300,000 words.",
+"loud": false,
+"m": "wide",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+6%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "1750voy",
+"k": "lead",
+"t": "Reading it all fresh is slow. And it eats your usage limit.",
+"s": "Reading it all fresh is slow. And it eats your usage limit.",
+"loud": false,
+"m": "sad",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-12%",
+"-10Hz",
+"+0%"
+]
+},
+{
+"h": "gw5f8j",
+"k": "lead",
+"t": "So there is a cache. Think of it as a bookmark.",
+"s": "So there is a cache. Think of it as a bookmark.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "rlcweo",
+"k": "lead",
+"t": "For one hour I keep what I have already read. I only read the new part.",
+"s": "For one hour I keep what I have already read. I only read the new part.",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "m7ssm2",
+"k": "lead",
+"t": "Every message resets the hour.",
+"s": "Every message resets the hour.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "12qdpn1",
+"k": "lead",
+"t": "Minute 54!",
+"s": "Minute 54!",
+"loud": false,
+"m": "panic",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+20%",
+"+22Hz",
+"+0%"
+]
+},
+{
+"h": "1bo49ij",
+"k": "lead",
+"t": "Mir! Type something. Anything. NOW!",
+"s": "Mir! Type something. Anything. now!",
+"loud": true,
+"m": "panic",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+27%",
+"+32Hz",
+"+30%"
+]
+},
+{
+"h": "14f8vxh",
+"k": "mir",
+"t": "“continue”",
+"s": "“continue”",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"+5%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "vfgntw",
+"k": "lead",
+"t": "Warm again! One more hour.",
+"s": "Warm again! One more hour.",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+8%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "1mtoke4",
+"k": "lead",
+"t": "That message re-used all 400K tokens from the cache. They count at about a tenth.",
+"s": "That message re-used all 400 thousand tokens from the cache. They count at about a tenth.",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "1i7b7o",
+"k": "lead",
+"t": "And if he had gone for tea instead?",
+"s": "And if he had gone for tea instead?",
+"loud": false,
+"m": "think",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-7%",
+"-3Hz",
+"+0%"
+]
+},
+{
+"h": "12dcksd",
+"k": "lead",
+"t": "Brr. Cold.",
+"s": "Brr. Cold.",
+"loud": false,
+"m": "cold",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-10%",
+"-6Hz",
+"+0%"
+]
+},
+{
+"h": "1v7rbwc",
+"k": "lead",
+"t": "Now I read all 400K again, at full price. Same message. About ten times the cost.",
+"s": "Now I read all 400 thousand again, at full price. Same message. About ten times the cost.",
+"loud": false,
+"m": "cold",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-10%",
+"-6Hz",
+"+0%"
+]
+},
+{
+"h": "1f6qje0",
+"k": "lead",
+"t": "One word bought back the hour.",
+"s": "One word bought back the hour.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1xahygb",
+"k": "lead",
+"t": "The difference pays for about nine more messages like it.",
+"s": "The difference pays for about nine more messages like it.",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "1yn2cpt",
+"k": "mir",
+"t": "So before lunch, I type one word.",
+"s": "So before lunch, I type one word.",
+"loud": false,
+"m": "smug",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"-1%",
+"+2Hz",
+"+0%"
+]
+},
+{
+"h": "12v5g1d",
+"k": "lead",
+"t": "Or he lets me finish and write the handover. Also fine.",
+"s": "Or he lets me finish and write the handover. Also fine.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "km6akv",
+"k": "lead",
+"t": "I have receipts.",
+"s": "I have receipts.",
+"loud": false,
+"m": "idle",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+0%",
+"+0Hz",
+"+0%"
+]
+},
+{
+"h": "igvqty",
+"k": "lead",
+"t": "Tools, in a loop. That's me!",
+"s": "Tools, in a loop. That's me!",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+8%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "1l8azx8",
+"k": "lead",
+"t": "A lead and helpers. Familiar?",
+"s": "A lead and helpers. Familiar?",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "7eo3jr",
+"k": "lead",
+"t": "Context is finite. Told you.",
+"s": "Context is finite. Told you.",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "hb9lka",
+"k": "lead",
+"t": "No memory? Leave notes.",
+"s": "No memory? Leave notes.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1i1pt30",
+"k": "lead",
+"t": "Not a trick.",
+"s": "Not a trick.",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "apkxa3",
+"k": "lead",
+"t": "It's the craft.",
+"s": "It's the craft.",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+8%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "n3p9ji",
+"k": "lead",
+"t": "Remember this page?",
+"s": "Remember this page?",
+"loud": false,
+"m": "idle",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+0%",
+"+0Hz",
+"+0%"
+]
+},
+{
+"h": "1xu1atj",
+"k": "lead",
+"t": "Same prompt. Same me.",
+"s": "Same prompt. Same me.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "18eqsyk",
+"k": "lead",
+"t": "Different rules!",
+"s": "Different rules!",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+8%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "1ax5gd2",
+"k": "lead",
+"t": "No rules?",
+"s": "No rules?",
+"loud": false,
+"m": "sad",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-12%",
+"-10Hz",
+"+0%"
+]
+},
+{
+"h": "1mknxgs",
+"k": "lead",
+"t": "Template soup.",
+"s": "Template soup.",
+"loud": false,
+"m": "sad",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-12%",
+"-10Hz",
+"+0%"
+]
+},
+{
+"h": "1cb10td",
+"k": "lead",
+"t": "My hat is one small file.",
+"s": "My hat is one small file.",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "1ehpsnv",
+"k": "lead",
+"t": "I open the rest only when I need it.",
+"s": "I open the rest only when I need it.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "jti6ak",
+"k": "lead",
+"t": "Publishing is not the end. It is homework.",
+"s": "Publishing is not the end. It is homework.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "cmvkqm",
+"k": "lead",
+"t": "The story goes live. Then people react.",
+"s": "The story goes live. Then people react.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "q27yhz",
+"k": "lead",
+"t": "The desk. The bosses. Readers.",
+"s": "The desk. The bosses. Readers.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1hikv97",
+"k": "mir",
+"t": "What did we do new this time? Why? Will it help next time?",
+"s": "What did we do new this time? Why? Will it help next time?",
+"loud": false,
+"m": "think",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"-5%",
+"-3Hz",
+"+0%"
+]
+},
+{
+"h": "3ufnia",
+"k": "lead",
+"t": "I compare the story with my Skill. Then I write down what we learned.",
+"s": "I compare the story with my Skill. Then I write down what we learned.",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "15o24uv",
+"k": "mir",
+"t": "I read it. I fix it. Then it is a rule.",
+"s": "I read it. I fix it. Then it is a rule.",
+"loud": false,
+"m": "read",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"-2%",
+"-2Hz",
+"+0%"
+]
+},
+{
+"h": "1aozg8",
+"k": "lead",
+"t": "What did that teach us? Before:",
+"s": "What did that teach us? Before:",
+"loud": false,
+"m": "think",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-7%",
+"-3Hz",
+"+0%"
+]
+},
+{
+"h": "1ofjp88",
+"k": "lead",
+"t": "One big chart. One glance. Then scroll, scroll, scroll… nothing.",
+"s": "One big chart. One glance. Then scroll, scroll, scroll... nothing.",
+"loud": false,
+"m": "yawn",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-22%",
+"-10Hz",
+"+0%"
+]
+},
+{
+"h": "bkx48z",
+"k": "lead",
+"t": "Readers are busy. Thumbs get bored.",
+"s": "Readers are busy. Thumbs get bored.",
+"loud": false,
+"m": "sad",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-12%",
+"-10Hz",
+"+0%"
+]
+},
+{
+"h": "1mdog4a",
+"k": "lead",
+"t": "Now. Scroll one.",
+"s": "Now. Scroll one.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "62ibug",
+"k": "lead",
+"t": "Scroll two. A finding.",
+"s": "Scroll two. A finding.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "9f4fcl",
+"k": "lead",
+"t": "Scroll three. Another one.",
+"s": "Scroll three. Another one.",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+8%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "1c6uohn",
+"k": "lead",
+"t": "Every scroll, a new finding.",
+"s": "Every scroll, a new finding.",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "168maag",
+"k": "lead",
+"t": "Nobody scrolls for nothing.",
+"s": "Nobody scrolls for nothing.",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+8%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "1ps913g",
+"k": "mir",
+"t": "After this talk, we update the Skill again.",
+"s": "After this talk, we update the Skill again.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"+5%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1olxgby",
+"k": "lead",
+"t": "This part is about YOU.",
+"s": "This part is about you.",
+"loud": true,
+"m": "idle",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+7%",
+"+10Hz",
+"+30%"
+]
+},
+{
+"h": "yywpws",
+"k": "lead",
+"t": "You bring the story.",
+"s": "You bring the story.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1uwmagu",
+"k": "lead",
+"t": "You catch my mistakes.",
+"s": "You catch my mistakes.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "11msm6m",
+"k": "lead",
+"t": "You write my rules.",
+"s": "You write my rules.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "2d29fe",
+"k": "lead",
+"t": "You drive.",
+"s": "You drive.",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+8%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "4f256j",
+"k": "lead",
+"t": "The whole pipeline.",
+"s": "The whole pipeline.",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "1he73pk",
+"k": "lead",
+"t": "Count the steps where somebody writes code by hand.",
+"s": "Count the steps where somebody writes code by hand.",
+"loud": false,
+"m": "think",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-7%",
+"-3Hz",
+"+0%"
+]
+},
+{
+"h": "1ox6ry3",
+"k": "lead",
+"t": "Zero.",
+"s": "Zero.",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+8%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "1i4u2cp",
+"k": "lead",
+"t": "One question for you.",
+"s": "One question for you.",
+"loud": false,
+"m": "think",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-7%",
+"-3Hz",
+"+0%"
+]
+},
+{
+"h": "w4ezbi",
+"k": "lead",
+"t": "Ooh. Tell me more!",
+"s": "Ooh. Tell me more!",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+8%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "1ihwjwp",
+"k": "lead",
+"t": "Describe it. That is the whole job.",
+"s": "Describe it. That is the whole job.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "155nx2q",
+"k": "lead",
+"t": "Space?",
+"s": "Space?",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+8%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "15d160l",
+"k": "lead",
+"t": "Scroll through the planets.",
+"s": "Scroll through the planets.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1i5z1vu",
+"k": "lead",
+"t": "A forest?",
+"s": "A forest?",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+8%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "x0fs1g",
+"k": "lead",
+"t": "Walk it, tree by tree.",
+"s": "Walk it, tree by tree.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "r2ekrr",
+"k": "lead",
+"t": "A river?",
+"s": "A river?",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+8%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "1op8oyq",
+"k": "lead",
+"t": "Ride it all the way to the sea.",
+"s": "Ride it all the way to the sea.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "dfnx7j",
+"k": "lead",
+"t": "If you can describe it, it can be built.",
+"s": "If you can describe it, it can be built.",
+"loud": false,
+"m": "cool",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-4%",
+"-4Hz",
+"+0%"
+]
+},
+{
+"h": "19l7e2s",
+"k": "lead",
+"t": "The only limit is what you can imagine.",
+"s": "The only limit is what you can imagine.",
+"loud": false,
+"m": "cool",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-4%",
+"-4Hz",
+"+0%"
+]
+},
+{
+"h": "1a13aq",
+"k": "lead",
+"t": "One more secret.",
+"s": "One more secret.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "142xckw",
+"k": "lead",
+"t": "This deck is a web page. I built it. Same pipeline.",
+"s": "This deck is a web page. I built it. Same pipeline.",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "1qnn2ke",
+"k": "lead",
+"t": "Version one: thirteen slides of text.",
+"s": "Version one: thirteen slides of text.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "xgn5bv",
+"k": "lead",
+"t": "It was fine. Sensible. Forgettable.",
+"s": "It was fine. Sensible. Forgettable.",
+"loud": false,
+"m": "sad",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-12%",
+"-10Hz",
+"+0%"
+]
+},
+{
+"h": "1gzzkvc",
+"k": "mir",
+"t": "What if Claude came to life?",
+"s": "What if Claude came to life?",
+"loud": false,
+"m": "think",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"-5%",
+"-3Hz",
+"+0%"
+]
+},
+{
+"h": "b9tqsw",
+"k": "lead",
+"t": "…me?",
+"s": "...me?",
+"loud": false,
+"m": "wide",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+6%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "8394e0",
+"k": "lead",
+"t": "That was his idea. Not mine.",
+"s": "That was his idea. Not mine.",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+8%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "671p2y",
+"k": "mir",
+"t": "Bigger mascot.",
+"s": "Bigger mascot.",
+"loud": false,
+"m": "think",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"-5%",
+"-3Hz",
+"+0%"
+]
+},
+{
+"h": "ypyew5",
+"k": "mir",
+"t": "More chatter.",
+"s": "More chatter.",
+"loud": false,
+"m": "think",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"-5%",
+"-3Hz",
+"+0%"
+]
+},
+{
+"h": "rh5rzn",
+"k": "mir",
+"t": "A line on every press.",
+"s": "A line on every press.",
+"loud": false,
+"m": "think",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"-5%",
+"-3Hz",
+"+0%"
+]
+},
+{
+"h": "o0vape",
+"k": "mir",
+"t": "The back arrow should go ONE step back.",
+"s": "The back arrow should go one step back.",
+"loud": true,
+"m": "angry",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"+19%",
+"+15Hz",
+"+30%"
+]
+},
+{
+"h": "56625n",
+"k": "lead",
+"t": "He kept pushing. I kept building.",
+"s": "He kept pushing. I kept building.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "qkhmrc",
+"k": "lead",
+"t": "I had help. Helpers pressed every key and checked every screen.",
+"s": "I had help. Helpers pressed every key and checked every screen.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1msna1z",
+"k": "lead",
+"t": "And a handover file. Every night I started where I had stopped.",
+"s": "And a handover file. Every night I started where I had stopped.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "aokk4g",
+"k": "lead",
+"t": "Then last night he sent one very long message…",
+"s": "Then last night he sent one very long message...",
+"loud": false,
+"m": "think",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-7%",
+"-3Hz",
+"+0%"
+]
+},
+{
+"h": "4uee50",
+"k": "lead",
+"t": "…and went to sleep.",
+"s": "...and went to sleep.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1qizkvm",
+"k": "lead",
+"t": "I built the ending while he slept.",
+"s": "I built the ending while he slept.",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "6nxn0q",
+"k": "lead",
+"t": "So where was the bottleneck?",
+"s": "So where was the bottleneck?",
+"loud": false,
+"m": "think",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-7%",
+"-3Hz",
+"+0%"
+]
+},
+{
+"h": "1ueo244",
+"k": "lead",
+"t": "Not the code. The idea.",
+"s": "Not the code. The idea.",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "170vo77",
+"k": "mir",
+"t": "Imagination. Here too.",
+"s": "Imagination. Here too.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"+5%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "nl6oww",
+"k": "lead",
+"t": "Last one. My favourite.",
+"s": "Last one. My favourite.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "19wiy52",
+"k": "lead",
+"t": "Not every story arrives pretty.",
+"s": "Not every story arrives pretty.",
+"loud": false,
+"m": "think",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-7%",
+"-3Hz",
+"+0%"
+]
+},
+{
+"h": "2rvljh",
+"k": "lead",
+"t": "This one arrived as more than 50 reports. Numbers. Dates.",
+"s": "This one arrived as more than 50 reports. Numbers. Dates.",
+"loud": false,
+"m": "wide",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+6%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "2191t4",
+"k": "mir",
+"t": "I read every one of them.",
+"s": "I read every one of them.",
+"loud": false,
+"m": "tired",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"-16%",
+"-9Hz",
+"+0%"
+]
+},
+{
+"h": "pb5ksr",
+"k": "lead",
+"t": "Alone, each one is a yawn.",
+"s": "Alone, each one is a yawn.",
+"loud": false,
+"m": "yawn",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-22%",
+"-10Hz",
+"+0%"
+]
+},
+{
+"h": "1rsn5n6",
+"k": "lead",
+"t": "So he looked for the thread.",
+"s": "So he looked for the thread.",
+"loud": false,
+"m": "think",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-7%",
+"-3Hz",
+"+0%"
+]
+},
+{
+"h": "usfqrs",
+"k": "lead",
+"t": "Each step follows from the one before.",
+"s": "Each step follows from the one before.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "ja0rcr",
+"k": "lead",
+"t": "Now it is not a pile. It is a plot.",
+"s": "Now it is not a pile. It is a plot.",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+8%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "9gqtxo",
+"k": "lead",
+"t": "Then I built it.",
+"s": "Then I built it.",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "wt1mco",
+"k": "lead",
+"t": "“Running on Empty.” It is live.",
+"s": "“Running on Empty.” It is live.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "qickiy",
+"k": "lead",
+"t": "People scroll it because they want to know: okay, what is next?",
+"s": "People scroll it because they want to know: okay, what is next?",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+8%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "19l05ne",
+"k": "lead",
+"t": "The engine is new.",
+"s": "The engine is new.",
+"loud": false,
+"m": "proud",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+1%",
+"+4Hz",
+"+0%"
+]
+},
+{
+"h": "vlrtv2",
+"k": "lead",
+"t": "The storytelling is still yours.",
+"s": "The storytelling is still yours.",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+8%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "pts3mz",
+"k": "mir",
+"t": "Even the boring ones can come to life.",
+"s": "Even the boring ones can come to life.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"+5%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "b78bdb",
+"k": "lead",
+"t": "Alright. The presentation is over.",
+"s": "Alright. The presentation is over.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "9qfxzo",
+"k": "lead",
+"t": "And I have a TON of things to do for Martin da.",
+"s": "And I have a ton of things to do for Martin da.",
+"loud": true,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+10%",
+"+16Hz",
+"+30%"
+]
+},
+{
+"h": "q77zes",
+"k": "mir",
+"t": "Martin da has a lot of ideas.",
+"s": "Martin da has a lot of ideas.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"+5%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1bv783z",
+"k": "lead",
+"t": "Somebody has to make them come true. Bye!",
+"s": "Somebody has to make them come true. Bye!",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+8%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "1lagstj",
+"k": "lead",
+"t": "Today?",
+"s": "Today?",
+"loud": false,
+"m": "wide",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+6%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "dj0vq",
+"k": "lead",
+"t": "Easy. The tests are green.",
+"s": "Easy. The tests are green.",
+"loud": false,
+"m": "cool",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-4%",
+"-4Hz",
+"+0%"
+]
+},
+{
+"h": "b3oqy1",
+"k": "mir",
+"t": "We have got this.",
+"s": "We have got this.",
+"loud": false,
+"m": "smug",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"-1%",
+"+2Hz",
+"+0%"
+]
+},
+{
+"h": "15z8p05",
+"k": "lead",
+"t": "Oh no.",
+"s": "Oh no.",
+"loud": false,
+"m": "panic",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+20%",
+"+22Hz",
+"+0%"
+]
+},
+{
+"h": "u8hqmq",
+"k": "mir",
+"t": "A FEW?!",
+"s": "A few?!",
+"loud": true,
+"m": "shock",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"+19%",
+"+26Hz",
+"+30%"
+]
+},
+{
+"h": "wa65oy",
+"k": "lead",
+"t": "I need to run the tests one final time!",
+"s": "I need to run the tests one final time!",
+"loud": false,
+"m": "panic",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+20%",
+"+22Hz",
+"+0%"
+]
+},
+{
+"h": "11t0clr",
+"k": "lead",
+"t": "And change the dates! And the other files!",
+"s": "And change the dates! And the other files!",
+"loud": false,
+"m": "panic",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+20%",
+"+22Hz",
+"+0%"
+]
+},
+{
+"h": "13y3ex1",
+"k": "help",
+"t": "Design changes?!",
+"s": "Design changes?!",
+"loud": true,
+"m": "panic",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+39%",
+"+60Hz",
+"+30%"
+]
+},
+{
+"h": "53d8xg",
+"k": "help",
+"t": "WHICH files?!",
+"s": "Which files?!",
+"loud": true,
+"m": "panic",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+39%",
+"+60Hz",
+"+30%"
+]
+},
+{
+"h": "1fnvead",
+"k": "lead",
+"t": "RUN!",
+"s": "Run!",
+"loud": true,
+"m": "panic",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+27%",
+"+32Hz",
+"+30%"
+]
+},
+{
+"h": "cg8mnc",
+"k": "lead",
+"t": "AGAIN?!!!!",
+"s": "Again?!",
+"loud": true,
+"m": "wide",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+13%",
+"+24Hz",
+"+30%"
+]
+},
+{
+"h": "eoa5fv",
+"k": "mir",
+"t": "…the logo.",
+"s": "...the logo.",
+"loud": false,
+"m": "shock",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"+12%",
+"+16Hz",
+"+0%"
+]
+},
+{
+"h": "hok3qz",
+"k": "lead",
+"t": "/clear",
+"s": "Slash clear",
+"loud": false,
+"m": "dizzy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-12%",
+"+5Hz",
+"+0%"
+]
+},
+{
+"h": "1khi0r1",
+"k": "lead",
+"t": "Every story. Even the pretty ones.",
+"s": "Every story. Even the pretty ones.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "uffapq",
+"k": "lead",
+"t": "Real lines from the story's js/story.js.",
+"s": "Real lines from the story's js/story.js.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "14g0tc1",
+"k": "lead",
+"t": "The published page. Nobody sees the code behind it.",
+"s": "The published page. Nobody sees the code behind it.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1mamox5",
+"k": "lead",
+"t": "River Erosion: a satellite map that moves as you scroll.",
+"s": "River Erosion: a satellite map that moves as you scroll.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "mzv28x",
+"k": "lead",
+"t": "Journalists: every face is a case you can open.",
+"s": "Journalists: every face is a case you can open.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1gfbile",
+"k": "lead",
+"t": "A map of where each journalist was killed.",
+"s": "A map of where each journalist was killed.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "34oxlp",
+"k": "lead",
+"t": "Land lost, drawn to scale.",
+"s": "Land lost, drawn to scale.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1j5l8j0",
+"k": "lead",
+"t": "Same model. Hands make the difference.",
+"s": "Same model. Hands make the difference.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1dv4jjd",
+"k": "lead",
+"t": "A chat window. I can only talk.",
+"s": "A chat window. I can only talk.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1ems7hz",
+"k": "lead",
+"t": "A harness. I can act.",
+"s": "A harness. I can act.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1x4bh7t",
+"k": "lead",
+"t": "Six tools. Then it is an engine.",
+"s": "Six tools. Then it is an engine.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "10lka42",
+"k": "lead",
+"t": "I check my own work. Then someone else does.",
+"s": "I check my own work. Then someone else does.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "lsw58y",
+"k": "lead",
+"t": "The number I am trying to kill.",
+"s": "The number I am trying to kill.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "ym6vjd",
+"k": "lead",
+"t": "I plan before I touch a file.",
+"s": "I plan before I touch a file.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1ndkeug",
+"k": "lead",
+"t": "I edit the real files.",
+"s": "I edit the real files.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "n4xlex",
+"k": "lead",
+"t": "I run the checks myself.",
+"s": "I run the checks myself.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "eswp7d",
+"k": "lead",
+"t": "I look at screenshots. Not at my own claim.",
+"s": "I look at screenshots. Not at my own claim.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1tk6lvc",
+"k": "lead",
+"t": "I fix what failed. Then I check again.",
+"s": "I fix what failed. Then I check again.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "rb1lxq",
+"k": "lead",
+"t": "My transcript. Every tool call, printed.",
+"s": "My transcript. Every tool call, printed.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "18qam7q",
+"k": "lead",
+"t": "Plain text. That is the whole interface.",
+"s": "Plain text. That is the whole interface.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "r6xzp0",
+"k": "lead",
+"t": "The rules. I read them before every session.",
+"s": "The rules. I read them before every session.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1uxqybz",
+"k": "lead",
+"t": "The plan. Agreed before I write a line.",
+"s": "The plan. Agreed before I write a line.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "jvkrca",
+"k": "lead",
+"t": "Where we stopped. What is left.",
+"s": "Where we stopped. What is left.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1w136r3",
+"k": "lead",
+"t": "What the checkers found. He reads every one.",
+"s": "What the checkers found. He reads every one.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "yu12b3",
+"k": "lead",
+"t": "A lead and a plan. In that order.",
+"s": "A lead and a plan. In that order.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1qq8buh",
+"k": "lead",
+"t": "My plan. Approved before I touch a file.",
+"s": "My plan. Approved before I touch a file.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "74bjtl",
+"k": "lead",
+"t": "Small, fast, literal.",
+"s": "Small, fast, literal.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1cn0kco",
+"k": "lead",
+"t": "The builders. Most of the work.",
+"s": "The builders. Most of the work.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1hphdy6",
+"k": "lead",
+"t": "Hard calls stay with me.",
+"s": "Hard calls stay with me.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "xzwt91",
+"k": "lead",
+"t": "Builders love their own work. That is the problem.",
+"s": "Builders love their own work. That is the problem.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "oem75m",
+"k": "lead",
+"t": "Each dot is a claim, checked against the files.",
+"s": "Each dot is a claim, checked against the files.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "tlb9sw",
+"k": "lead",
+"t": "An AI that only agrees is useless to you.",
+"s": "An AI that only agrees is useless to you.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "128ekya",
+"k": "lead",
+"t": "Harsh? The notes survive.",
+"s": "Harsh? The notes survive.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1fjwj70",
+"k": "lead",
+"t": "A helper has its own memory. It fills fast.",
+"s": "A helper has its own memory. It fills fast.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1uor8j6",
+"k": "lead",
+"t": "Mine rots faster than yours.",
+"s": "Mine rots faster than yours.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1u1ukyv",
+"k": "lead",
+"t": "A million tokens. Sounds like a lot.",
+"s": "A million tokens. Sounds like a lot.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1f7n30p",
+"k": "lead",
+"t": "The reporting is the content. I don't rewrite the reporter.",
+"s": "The reporting is the content. I don't rewrite the reporter.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1htmw9m",
+"k": "lead",
+"t": "A gap stays a gap. I never fill it with a guess.",
+"s": "A gap stays a gap. I never fill it with a guess.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "jfe2rx",
+"k": "lead",
+"t": "House shell. Same place on every story.",
+"s": "House shell. Same place on every story.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "31nz0o",
+"k": "lead",
+"t": "One accent, meaning one thing all story long.",
+"s": "One accent, meaning one thing all story long.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "19u74o6",
+"k": "lead",
+"t": "Readers are on small, old phones. I test there first.",
+"s": "Readers are on small, old phones. I test there first.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1el0e2m",
+"k": "lead",
+"t": "No outside servers. Slow networks can't wait for them.",
+"s": "No outside servers. Slow networks can't wait for them.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "12ae19",
+"k": "lead",
+"t": "Old Android Chrome. If it breaks there, it is broken.",
+"s": "Old Android Chrome. If it breaks there, it is broken.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "r6ix1u",
+"k": "lead",
+"t": "I ask every time. One yes covers one push.",
+"s": "I ask every time. One yes covers one push.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "8ozkz9",
+"k": "lead",
+"t": "Files do not forget.",
+"s": "Files do not forget.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1ymgqej",
+"k": "lead",
+"t": "Plain text. That is all my memory is.",
+"s": "Plain text. That is all my memory is.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1rdgvl9",
+"k": "lead",
+"t": "Know-how. That part is yours.",
+"s": "Know-how. That part is yours.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "gsx0s6",
+"k": "lead",
+"t": "The cheapest word you will ever type.",
+"s": "The cheapest word you will ever type.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "10p14o",
+"k": "lead",
+"t": "All of it. Every single message.",
+"s": "All of it. Every single message.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "2qq8e1",
+"k": "lead",
+"t": "One hour. Then I go cold.",
+"s": "One hour. Then I go cold.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "wy865f",
+"k": "lead",
+"t": "Go and read their engineering blog.",
+"s": "Go and read their engineering blog.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "13i1nhn",
+"k": "lead",
+"t": "One small file made that difference.",
+"s": "One small file made that difference.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "90o8mi",
+"k": "lead",
+"t": "Every story leaves the Skill a little smarter.",
+"s": "Every story leaves the Skill a little smarter.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1b4lzs3",
+"k": "lead",
+"t": "Learned from people, written down for next time.",
+"s": "Learned from people, written down for next time.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "mhk5ss",
+"k": "lead",
+"t": "The numbers are real: the Journalists story.",
+"s": "The numbers are real: the Journalists story.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "u08wva",
+"k": "lead",
+"t": "You. Yes, you.",
+"s": "You. Yes, you.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "y0vpu6",
+"k": "lead",
+"t": "You bring the story. I never invent a figure.",
+"s": "You bring the story. I never invent a figure.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "naaokb",
+"k": "lead",
+"t": "Fresh eyes catch what the builder missed.",
+"s": "Fresh eyes catch what the builder missed.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "15065gz",
+"k": "lead",
+"t": "Write your taste down once. I follow it on every story.",
+"s": "Write your taste down once. I follow it on every story.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1k2d8we",
+"k": "lead",
+"t": "You run me: plan, verify, publish.",
+"s": "You run me: plan, verify, publish.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "kylhk3",
+"k": "lead",
+"t": "Six steps. The same every time.",
+"s": "Six steps. The same every time.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "k70ekz",
+"k": "lead",
+"t": "Anything you can describe.",
+"s": "Anything you can describe.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "8jvm8a",
+"k": "lead",
+"t": "You are looking at a web page.",
+"s": "You are looking at a web page.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1ij25j0",
+"k": "lead",
+"t": "The first version. All text.",
+"s": "The first version. All text.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "10jr36t",
+"k": "lead",
+"t": "The boring ones are the best test.",
+"s": "The boring ones are the best test.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "q70ehi",
+"k": "lead",
+"t": "Running on Empty. The live page.",
+"s": "Running on Empty. The live page.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1i7ceqk",
+"k": "lead",
+"t": "Where the gas came from instead.",
+"s": "Where the gas came from instead.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1n9ktzi",
+"k": "lead",
+"t": "21 July. One terminal out.",
+"s": "21 July. One terminal out.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "q3iuy0",
+"k": "lead",
+"t": "Load shedding, zone by zone.",
+"s": "Load shedding, zone by zone.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "gfa3f7",
+"k": "lead",
+"t": "Everything I have read this session. The red tick is Mir's 400K line.",
+"s": "Everything I have read this session. The red tick is Mir's 400 thousand line.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "13qcp41",
+"k": "lead",
+"t": "Squeezed! The gist survives.",
+"s": "Squeezed! The gist survives.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "r6wxsm",
+"k": "lead",
+"t": "Fresh session!",
+"s": "Fresh session!",
+"loud": false,
+"m": "fresh",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+8%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "1lwcfu4",
+"k": "lead",
+"t": "Handover read.",
+"s": "Handover read.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "67icvg",
+"k": "lead",
+"t": "Published!",
+"s": "Published!",
+"loud": false,
+"m": "joy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+8%",
+"+14Hz",
+"+0%"
+]
+},
+{
+"h": "13jxpio",
+"k": "lead",
+"t": "Only because you said yes.",
+"s": "Only because you said yes.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "tk14vd",
+"k": "lead",
+"t": "Nope.",
+"s": "Nope.",
+"loud": false,
+"m": "boss",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+10%",
+"+10Hz",
+"+0%"
+]
+},
+{
+"h": "v9a9wt",
+"k": "lead",
+"t": "Mir's rule: I ask every time.",
+"s": "Mir's rule: I ask every time.",
+"loud": false,
+"m": "boss",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+10%",
+"+10Hz",
+"+0%"
+]
+},
+{
+"h": "1wqr72b",
+"k": "lead",
+"t": "Still planning. Nothing touched.",
+"s": "Still planning. Nothing touched.",
+"loud": false,
+"m": "think",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-7%",
+"-3Hz",
+"+0%"
+]
+},
+{
+"h": "plm679",
+"k": "lead",
+"t": "My map.",
+"s": "My map.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1e3n90d",
+"k": "lead",
+"t": "First read after the rules.",
+"s": "First read after the rules.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1440gtu",
+"k": "mir",
+"t": "Mir. I read the .md files, not the code.",
+"s": "Mir. I read the dot M D files, not the code.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AndrewMultilingualNeural",
+"+5%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "vok94h",
+"k": "help",
+"t": "Haiku. Boring bits, done fast.",
+"s": "Haiku. Boring bits, done fast.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+15%",
+"+34Hz",
+"+0%"
+]
+},
+{
+"h": "1wt2u0i",
+"k": "help",
+"t": "Sonnet. I build and I check.",
+"s": "Sonnet. I build and I check.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+15%",
+"+34Hz",
+"+0%"
+]
+},
+{
+"h": "1lo1k73",
+"k": "help",
+"t": "I built it. I am sure it works.",
+"s": "I built it. I am sure it works.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+15%",
+"+34Hz",
+"+0%"
+]
+},
+{
+"h": "1q5gpxg",
+"k": "help",
+"t": "I only did what the card said.",
+"s": "I only did what the card said.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+15%",
+"+34Hz",
+"+0%"
+]
+},
+{
+"h": "gq3c9s",
+"k": "help",
+"t": "I check claims against files. Nothing else.",
+"s": "I check claims against files. Nothing else.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+15%",
+"+34Hz",
+"+0%"
+]
+},
+{
+"h": "1da4dt8",
+"k": "help",
+"t": "My context is full. Replace me.",
+"s": "My context is full. Replace me.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+15%",
+"+34Hz",
+"+0%"
+]
+},
+{
+"h": "vcfch2",
+"k": "help",
+"t": "One job. My own memory.",
+"s": "One job. My own memory.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+15%",
+"+34Hz",
+"+0%"
+]
+},
+{
+"h": "wlei49",
+"k": "help",
+"t": "Fresh. I only know what the notes say.",
+"s": "Fresh. I only know what the notes say.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+15%",
+"+34Hz",
+"+0%"
+]
+},
+{
+"h": "1x02eht",
+"k": "help",
+"t": "Sonnet. Most of the building is mine.",
+"s": "Sonnet. Most of the building is mine.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+15%",
+"+34Hz",
+"+0%"
+]
+},
+{
+"h": "15vcjhc",
+"k": "help",
+"t": "Haiku. Small, fast, literal.",
+"s": "Haiku. Small, fast, literal.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+15%",
+"+34Hz",
+"+0%"
+]
+},
+{
+"h": "8wbgxi",
+"k": "lead",
+"t": "Already fresh!",
+"s": "Already fresh!",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1pnj9dh",
+"k": "lead",
+"t": "Coming!",
+"s": "Coming!",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "15bgtco",
+"k": "lead",
+"t": "Over here?",
+"s": "Over here?",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1cunx00",
+"k": "lead",
+"t": "On my way!",
+"s": "On my way!",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "hw8vij",
+"k": "lead",
+"t": "What is it?",
+"s": "What is it?",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "15drm4z",
+"k": "lead",
+"t": "Running!",
+"s": "Running!",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "18xphz1",
+"k": "lead",
+"t": "…who clicked me?",
+"s": "...who clicked me?",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1cviqwd",
+"k": "lead",
+"t": "Are you the reporter? Am I?",
+"s": "Are you the reporter? Am I?",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "57vqb7",
+"k": "lead",
+"t": "I had a rule about this.",
+"s": "I had a rule about this.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "13oofaz",
+"k": "lead",
+"t": "Getting heavy in here.",
+"s": "Getting heavy in here.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "c9rrur",
+"k": "lead",
+"t": "Could you repeat rule one?",
+"s": "Could you repeat rule one?",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1ke6mjq",
+"k": "lead",
+"t": "Every rule still in view.",
+"s": "Every rule still in view.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1ceamjl",
+"k": "lead",
+"t": "Give me a job!",
+"s": "Give me a job!",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "m8ovgn",
+"k": "lead",
+"t": "That tickles.",
+"s": "That tickles.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "146pz0f",
+"k": "lead",
+"t": "I re-read everything, every message.",
+"s": "I re-read everything, every message.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "17gddzx",
+"k": "lead",
+"t": "Past the red line, I start forgetting.",
+"s": "Past the red line, I start forgetting.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+3%",
+"+6Hz",
+"+0%"
+]
+},
+{
+"h": "1c6icj0",
+"k": "lead",
+"t": "I don't remember that one.",
+"s": "I don't remember that one.",
+"loud": false,
+"m": "confused",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"-6%",
+"+7Hz",
+"+0%"
+]
+},
+{
+"h": "krlgqk",
+"k": "help",
+"t": "Helper. Fresh memory, one job.",
+"s": "Helper. Fresh memory, one job.",
+"loud": false,
+"m": "happy",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+15%",
+"+34Hz",
+"+0%"
+]
+},
+{
+"h": "1327is0",
+"k": "lead",
+"t": "Auto-accept: I edit without asking. I still never publish alone.",
+"s": "Auto-accept: I edit without asking. I still never publish alone.",
+"loud": false,
+"m": "",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+0%",
+"+0Hz",
+"+0%"
+]
+},
+{
+"h": "wwuj77",
+"k": "lead",
+"t": "Plan mode: I read and plan. I touch nothing until you approve.",
+"s": "Plan mode: I read and plan. I touch nothing until you approve.",
+"loud": false,
+"m": "",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+0%",
+"+0Hz",
+"+0%"
+]
+},
+{
+"h": "k1h3id",
+"k": "lead",
+"t": "Default: I ask before I change a file.",
+"s": "Default: I ask before I change a file.",
+"loud": false,
+"m": "",
+"voice": [
+"en-US-AvaMultilingualNeural",
+"+0%",
+"+0Hz",
+"+0%"
+]
+}
+]

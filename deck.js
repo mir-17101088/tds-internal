@@ -296,13 +296,21 @@ function opReady(instant) {
 }
 SC.open = {
   ctx: 0, lead: false, hud: false,
+  /* first the mascot alone, filling the stage; she greets the room on the first press, and the second press starts the prompt */
   enter: function () {
-    op = 'typing'; $('ptype').textContent = ''; $('pcur').style.display = '';
+    op = 'intro'; $('ptype').textContent = ''; $('pcur').style.display = '';
     ['comp', 'gen', 'slop', 'real', 'oshout', 'otitle'].forEach(function (id) { $(id).classList.remove('show', 'gone'); }); stage.classList.remove('quake');
-    M.size(12).at(1740, 1008).face(-1).show().hold('none'); M.el.classList.add('typing');
-    var i = 0; later(function tick() { if (op !== 'typing') return; $('ptype').textContent = PROMPT.slice(0, ++i); if (i < PROMPT.length) later(tick, 42); else later(function () { opReady(false); }, 500); }, 900);
+    $('comp').classList.add('gone'); M.el.classList.remove('typing');
+    L.el.classList.add('big'); L.size(56).at(960, 1010).face(1).show(); L.mood('happy');
   },
+  leave: function () { L.el.classList.remove('big'); },
   beats: [
+    function () { P([['Hey everyone, I am Claude.', 'joy', function () { L.hop(); }]], 'mid'); },
+    function () {
+      L.poof(); L.el.classList.remove('big'); L.mood(); op = 'typing'; $('comp').classList.remove('gone');
+      M.size(12).at(1740, 1008).face(-1).show().hold('none'); M.el.classList.add('typing');
+      var i = 0; later(function tick() { if (op !== 'typing') return; $('ptype').textContent = PROMPT.slice(0, ++i); if (i < PROMPT.length) later(tick, 42); else later(function () { opReady(false); }, 500); }, 900);
+    },
     function () {
       opReady(true); unsched(L._sp); L.show(); L.hush(); L.mood('happy'); op = 'slop'; M.el.classList.remove('typing');
       $('comp').classList.add('gone'); later(function () { $('gen').classList.add('show'); }, 350);
@@ -787,7 +795,7 @@ stage.addEventListener('click', function (e) {
 /* ---------- keys ---------- */
 $('help').textContent = ['KEYS', '→  Space  PageDown  Enter   next line (a line stays until you press)', '←  PageUp  Backspace  ONE step back (at the top of a scene: the end of the one before)', ']  [                 skip to the next scene / the start of the previous one', 'R                    restart this scene', '1-4                  answer a dialog (Enter = highlighted)',
   '/                    command line: /clear /compact /context /agents /model /rewind', 'Esc                  interrupt the mascot (twice: rewind this scene)', 'Shift+Tab            cycle the permission mode',
-  'M                    mascot idle asides on / off', 'N  notes + timer     T  reset timer     F  fullscreen', '?                    this panel', 'Mouse                click anywhere: the mascot goes there'].join(String.fromCharCode(10));
+  'M                    mascot idle asides on / off', 'V                    voices: everyone / mascots only / off', 'N  notes + timer     T  reset timer     F  fullscreen', '?                    this panel', 'Mouse                click anywhere: the mascot goes there'].join(String.fromCharCode(10));
 addEventListener('keydown', function (e) {
   if (e.ctrlKey || e.metaKey || e.altKey) return;
   var k = e.key; lastAct = Date.now();
@@ -819,6 +827,7 @@ addEventListener('keydown', function (e) {
   else if (k === 'Escape') { escT = Date.now(); if (L.visible) { L.stop(); L.arms('up'); L.emote('!', 'red'); setTimeout(function () { L.arms(); }, 900); hmsg('Interrupted · What should Claude do instead?'); } }
   else if (k === 'r' || k === 'R') restart();
   else if (k === 'm' || k === 'M') { chatty = !chatty; hmsg('Idle asides ' + (chatty ? 'on' : 'off')); }
+  else if (k === 'v' || k === 'V') hmsg(Clawd.voice.cycle());
   else if (k === 'Home') go(0); else if (k === 'End') go(slides.length - 1);
   else if (k === 'n' || k === 'N') $('notes').classList.toggle('on');
   else if (k === '?') $('help').classList.toggle('on');

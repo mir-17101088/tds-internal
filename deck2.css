@@ -318,3 +318,9 @@ h2{font-size:70px}
 .wa::before{left:18px;top:15px;width:44px;height:40px}
 .wa::after{left:19px;top:45px;width:18px;height:18px}
 .notif span{font-size:23px}.notif b{font-size:36px}.notif p{font-size:36px}
+
+/* the opening greeting: the mascot alone, filling the stage */
+.clawd.big .bubble{font-size:76px;max-width:1500px;padding:26px 48px 32px;border-radius:10px;box-shadow:14px 14px 0 rgba(0,0,0,.34)}
+.clawd.big .bubble::after{width:48px;height:36px;margin-left:-24px}
+/* no floating mood symbols at this size: one would cover her face */
+.clawd.big .emos{display:none}

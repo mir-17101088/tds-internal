@@ -1,5 +1,18 @@
 # >>> RESUME HERE (17 November 2026, morning QA pass by the scheduled task `tds-deck-qa`, pushed)
 
+## Voices (17 Nov, late morning; pushed to GitHub at Mir's word)
+- Every speech bubble is also spoken, with **recorded neural voices** (Mir found the Windows voices too robotic; he wants human, emotional, playful). `python tools/voices.py` (not `-I`: it needs the `edge-tts` package) plays every scene in Chrome, collects each line (speaker, exact bubble text, mood) and records it through Microsoft's online speech service into `deck/voice/<hash>.mp3`; `deck/voice/lines.js` lists them. Mir approved sending the lines to Microsoft. 448 lines, 6.5 MB. ffmpeg trims the silence at both ends and caps pauses at 0.34 s.
+- Cast (`CAST` in `tools/voices.py`), **Mir's pick after the audition: mascot = Ava (`en-US-AvaMultilingualNeural`), Mir's avatar = Andrew (`en-US-AndrewMultilingualNeural`)**; helpers = Ava, higher and faster (Claude's choice, not Mir's). Mir calls the mascot "she". The mood of the sprite changes speed and pitch (`MOOD`); capitals and "?!" are louder and faster (`LOUD`). To change a voice: edit `CAST`, run `python tools/voices.py --all` (about 2 minutes). `python tools/voices.py --audition` builds `deck/audition/` (http://localhost:8000/audition/, not synced to the repo): the same lines in six mascot voices and five Mir voices.
+- **After any change to a spoken line, run `python tools/voices.py`** (it records only what is new and deletes what is gone). A line with no recording is silent: the "…" line, and click lines with a live number in them ("Hey! 12K of 1M used.").
+- Playback is `Clawd.voice` at the end of `mascot.js`: the files are fetched in the background in scene order and play from memory. One line at a time: a new line or a hush from the same sprite cuts its old line; a line from another sprite waits (only the newest waiting line is kept). The back arrow and scene changes stop the voice. Nothing is spoken during an instant replay. If `voice/lines.js` is missing, the browser's own speech engine reads the lines.
+- **V** cycles: everyone / mascots only (Mir's avatar silent) / off. Remembered per browser (`localStorage.deckVoice`). Under Playwright (`navigator.webdriver`) voices start off, so the QA scripts stay silent.
+- `tools/sync_repo.py` now replaces `voice/` in the repo clone.
+- Checked in real Chrome, muted: `under`, `md`, `team`, `loop` played live (a line starts about 40 ms after the press, all 446 files preload in 1.5 s locally, the talking animation ends with the voice); `smoke.py` 22 scenes, errors 0; `finale_check.py` problems: none. **Not checked: how it sounds** (only Mir can; nobody has listened to the 446 recordings), the TV's speakers, the Vercel copy.
+
+## Opening greeting (17 Nov, Mir's request; pushed)
+- `open` now starts with the mascot alone, filling the stage (u 56, class `big` on the sprite, styles at the end of `deck2.css`). Press 1: "Hey everyone, I am Claude." Press 2: she bursts into pixels and the old opening starts (Mir types the prompt). Everything after that is unchanged. The greeting waits for a press because a browser will not play sound before the first key press.
+- Checked in real Chrome: the three states, three steps back, three fast presses, `smoke.py` (open is now 15 presses, back-step OK), errors 0.
+
 ## QA pass, 17 Nov morning (read this first)
 **Checked (real Chrome, Playwright):**
 - `tools/smoke.py`: 22 scenes, every line "OK", errors 0 (before and after the fixes).
