@@ -335,7 +335,7 @@ SC.open = {
 /* ================= 2 UNDER ================= */
 (function () { var src = $('codesrc').textContent.replace(/^\n/, ''); $('codepre').textContent = src + '\n' + src; })();
 SC.under = {
-  ctx: 80, lead: [1530, 1012, 18], al: 'br', hello: ['Want to see a secret?'],
+  ctx: 80, lead: [1640, 1012, 16], al: 'br', hello: ['Want to see a secret?'],
   enter: function () {
     $('upage').classList.remove('open', 'away'); $('codewall').classList.remove('run'); $('fan').classList.remove('show');
     hide($('ucount')); Q('#urows li').forEach(hide); hide($('usmall')); $('un').textContent = '0';
@@ -380,10 +380,10 @@ function lightTool(i) {
   tools.forEach(function (_, k) { var on = k <= i; $('ht' + k).classList.toggle('lit', on); $('ht' + k).classList.toggle('cur', k === i); $('hp' + k).classList.toggle('lit', on); $('hc' + k).classList.toggle('lit', on); });
   $('th').textContent = tools[i][0]; $('tp').textContent = tools[i][1]; $('tcode').textContent = '● ' + tools[i][2];
   L.hold(tools[i][3]); L.wear(i >= 4 ? 'fedora' : ''); L.chip(tools[i][2]); P(tools[i][4]);
-  if (i >= 5) { if (!S[0].visible) { S[0].size(6).spawn(385, 742, function () { S[0].mood('joy'); }); S[1].size(6).spawn(815, 742, function () { S[1].mood('joy'); }); } } else { S[0].hide(); S[1].hide(); }
+  if (i >= 5) { if (!S[0].visible) { S[0].size(6).spawn(385, 764, function () { S[0].mood('joy'); }); S[1].size(6).spawn(815, 764, function () { S[1].mood('joy'); }); } } else { S[0].hide(); S[1].hide(); }
 }
 SC.tools = {
-  ctx: 150, lead: [600, 742, 16], bw: 372, hello: [['So what is IN a harness?', 'think'], ['Six things. Watch.', 'happy']],
+  ctx: 150, lead: [600, 764, 16], bw: 372, hello: [['So what is IN a harness?', 'think'], ['Six things. Watch.', 'happy']],
   enter: function () {
     tools.forEach(function (_, k) { ['ht', 'hp', 'hc'].forEach(function (p) { $(p + k).classList.remove('lit', 'cur'); }); });
     $('th').textContent = 'Six tools'; $('tp').textContent = 'Each one is something the AI can now do itself, instead of asking you to do it for it.'; $('tcode').textContent = '';
@@ -407,7 +407,9 @@ var lsteps = [
   [2, 'g', 'Bash(sweep 53 sizes, 320x480 to 3840x2160)', '<span class="ok">0 FAIL</span>', [['Test again. 53 sizes now.', 'think', function () { sweep(false); }], ['ZERO fail!', 'joy', failN('0')]], 'none'],
   [3, 'g', 'Read(screenshots)', 'No overflow. Title clear of the logo.', [['I look again. To be sure.', 'think'], ['Clean.', 'proud']], 'lens'],
   [0, 'o', 'Report', 'Done, and what was not re-run. <span class="ok">Not published.</span>', [['I write what I did.', 'happy'], ['And what I did NOT re-run.', 'happy'], ['Not published.', 'proud']], 'report']];
-var lnames = ['Plan', 'Act', 'Run checks', 'Inspect', 'Fix'], lal = ['bl', 'br', 'br', 'bl', 'bl'], LC = 1603;
+var lnames = ['Plan', 'Act', 'Run checks', 'Inspect', 'Fix'], lal = ['bl', 'br', 'bl', 'br', 'bl'], LC = 1603;
+/* where the mascot stands at each station (beside the label, never on it) and how wide its bubble may be there */
+var LSTN = [[490, 497], [780, 673], [772, 958], [225, 958], [200, 673]], LBW = [800, 300, 270, 300, 300];
 var lsay = ['I plan before I touch a file.', 'I edit the real files.', 'I run the checks myself.', 'I look at screenshots. Not at my own claim.', 'I fix what failed. Then I check again.'];
 function stn(i) { var a = -Math.PI / 2 + i * Math.PI * 2 / 5; return [490 + Math.cos(a) * 255, 675 + Math.sin(a) * 255 + 77]; }
 (function () {
@@ -431,11 +433,11 @@ SC.loop = {
       lnames.forEach(function (_, i) { $('ln' + i).classList.toggle('on', i === s[0]); });
       $('loopArc').setAttribute('stroke-dasharray', (LC * (k + 1) / lsteps.length) + ' ' + LC);
       logLine(s[1], s[2], s[3]); setCtx(180 + k * 8);
-      var p = stn(s[0]); L.hush(); L.hold(); L.mood('happy');
+      var p = LSTN[s[0]]; L.el.style.setProperty('--bw', LBW[s[0]] + 'px'); L.hush(); L.hold(); L.mood('happy');
       L.go(p[0], p[1], { speed: 1100, then: function () { L.hold(s[5]); L.chip(s[2]); P(s[4], lal[s[0]]); } });
     };
   }).concat([function () {
-    L.hold('report');
+    L.hold('report'); L.el.style.setProperty('--bw', '800px');
     P([{ s: M, t: 'Looks good. Push it. Do it yourself.', m: 'happy', al: 'br', f: function () { M.size(12).at(2100, 1012).face(-1).show(); M.go(1650, 1012, { dur: .7, face: -1 }); } },
       ['On it! One small thing first…', 'happy', function () {
       ask({
@@ -448,11 +450,12 @@ SC.loop = {
     }]]);
   }, function () {
     /* told to do it itself, it still asks: the rule is Mir's own */
+    L.el.style.setProperty('--bw', '900px');
     P([{ s: M, t: 'I SAID do it yourself!', m: 'angry', al: 'br shout', f: function () { M.hop(); L.mood('wide'); } },
       ['“Never deploy or push without asking.”', 'proud', function () { show($('hardrule')); L.hold('paper'); }],
       ['Your hard rule, boss.', 'proud'],
       { s: M, t: '…I did write that.', m: 'tired', al: 'br' },
-      ['One yes covers one push. Every single time.', 'happy', function () { M.mood(); }]], 'bl below');
+      ['One yes covers one push. Every single time.', 'happy', function () { M.mood(); }]], 'bl');
   }])
 };
 
@@ -480,7 +483,7 @@ function crew() {
 }
 function approve() { P([['Helpers! Line up!', 'boss', crew], { s: S[1], t: 'Ready!', m: 'joy' }]); }
 SC.team = {
-  ctx: 250, lead: [850, 1005, 15], bw: 420, hello: ['Big job. I need help.'],
+  ctx: 250, lead: [838, 1005, 15], bw: 326, hello: ['Big job. I need help.'],
   enter: function () {
     Q('.card').forEach(function (c) { c.remove(); }); Q('#planl li').forEach(function (l) { l.classList.remove('show', 'sent'); }); $('plan').classList.remove('okd'); hide($('tcap'));
   },
@@ -524,7 +527,7 @@ SC.review = {
   ctx: 300, lead: [585, 850, 16, -1], al: 'br', bw: 540, hello: ['Homework time.'],
   enter: function () {
     panic = false; Q('#dots i').forEach(function (i) { i.className = ''; }); $('rvc').textContent = '26 claims to check'; $('stamp').classList.remove('show'); hide($('claim')); hide($('rvline')); Q('#finds li').forEach(hide);
-    S[1].size(9).at(290, 745).face(1).show().tag('The builder'); S[0].size(6).at(190, 996).show(); S[3].size(6).at(420, 1000).show();
+    S[1].size(9).at(290, 757).face(1).show().tag('The builder'); S[0].size(6).at(190, 996).show(); S[3].size(6).at(420, 1000).show();
     S[1].lines = ['I built it. I am sure it works.']; S[0].lines = S[3].lines = ['I only did what the card said.'];
   },
   beats: [
@@ -542,7 +545,7 @@ SC.review = {
     },
     function () {
       P([['Get me fresh eyes.', 'boss', function () { panic = false; [S[0], S[1], S[3]].forEach(function (s) { s.mood('wide'); }); S[0].go(190, 996); S[3].go(420, 1000); }],
-        ['Someone who was not here.', 'stern', function () { S[2].size(9).wear('glasses').tag('Fresh reviewer').spawn(1690, 452, function () { S[2].face(-1); }); S[2].lines = ['I check claims against files. Nothing else.']; }],
+        ['Someone who was not here.', 'stern', function () { S[2].el.style.setProperty('--bw', '420px'); S[2].size(9).wear('glasses').tag('Fresh reviewer').spawn(1690, 452, function () { S[2].face(-1); }); S[2].lines = ['I check claims against files. Nothing else.']; }],
         { s: S[2], t: 'Fresh eyes. Files, please.', al: 'br below', f: runDots }]);
     },
     function () { P([['A rule that fights the code!', 'wide', function () { show(Q('#finds li')[0]); L.emote('!', 'red'); }]]); },
@@ -566,12 +569,12 @@ SC.fired = {
   ctx: 330, lead: [230, 835, 16], al: 'bl', bw: 440, hello: ['This helper has one job.'],
   enter: function () {
     $('wb').innerHTML = ''; $('wg').style.width = '4%'; $('wst').textContent = 'fresh'; $('win').classList.remove('full'); hide($('note25')); hide($('saq'));
-    S[1].size(10).at(650, 835).face(1).show().tag('Sonnet helper').bar(4); S[1].lines = ['One job. My own memory.'];
+    S[1].size(10).at(650, 835).face(1).show().tag('Sonnet helper').bar(4); S[1].el.style.setProperty('--bw', '330px'); S[1].lines = ['One job. My own memory.'];
   },
   beats: [
     function () {
-      P([{ s: S[1], t: 'Checking everything!', m: 'joy', al: 'bl', f: stream }, ['Watch its memory fill.', 'think'],
-        { s: S[1], t: 'So… many… logs…', m: 'yawn', al: 'bl' }, { s: S[1], t: 'Screenshot 41… or 14?', m: 'dizzy', al: 'bl' }, { s: S[1], t: 'Who am I checking for?', m: 'confused', al: 'bl' }]);
+      P([{ s: S[1], t: 'Checking everything!', m: 'joy', al: 'br', f: stream }, ['Watch its memory fill.', 'think'],
+        { s: S[1], t: 'So… many… logs…', m: 'yawn', al: 'br' }, { s: S[1], t: 'Screenshot 41… or 14?', m: 'dizzy', al: 'br' }, { s: S[1], t: 'Who am I checking for?', m: 'confused', al: 'br' }]);
     },
     function () {
       hushAll();
@@ -704,16 +707,16 @@ SC.cheap = {
   beats: [
     function () {
       show(Q('#levers li')[0]); L.hush(); L.size(15);
-      L.go(865, 500, { speed: 1600, face: 1, then: function () {
-        L.tag('Opus'); S[0].size(9).tag('Sonnet').spawn(1080, 500); S[1].size(6).tag('Haiku').spawn(1210, 500);
+      L.go(1060, 500, { speed: 1600, face: 1, then: function () {
+        L.tag('Opus'); S[0].size(9).tag('Sonnet').spawn(1275, 500); S[1].size(6).tag('Haiku').spawn(1405, 500);
         S[0].lines = ['Sonnet. Most of the building is mine.']; S[1].lines = ['Haiku. Small, fast, literal.'];
-        P([['Big calls: me.', 'proud'], { s: S[0], t: 'I build.', m: 'happy' }, { s: S[1], t: 'Boring bits! Fast!', m: 'joy', al: 'br' }], ' ');
+        P([['Big calls: me.', 'proud'], { s: S[0], t: 'I build.', m: 'happy', al: 'bl' }, { s: S[1], t: 'Boring bits! Fast!', m: 'joy', al: 'bl' }], ' ');
       } });
     },
     function () { P([['Small memory.', 'happy', function () { show(Q('#levers li')[1]); }], ['Sharp me.', 'joy']], ' '); },
     function () {
       show(Q('#levers li')[2]); S[0].hide(); S[1].hide(); L.tag(''); L.hush(); L.size(16); L.mood('happy');
-      L.go(920, 1005, { speed: 1600, face: 1, then: function () { L.hold('mug'); P([['And keep me warm.', 'proud'], ['That one saves the most. It gets its own slide.', 'happy']]); } });
+      L.go(1040, 1005, { speed: 1600, face: 1, then: function () { L.hold('mug'); P([['And keep me warm.', 'proud'], ['That one saves the most. It gets its own slide.', 'happy']], 'bl'); } });
     }
   ]
 };
@@ -749,7 +752,7 @@ function countLines(done) {
     .then(function (a) { done(a.reduce(function (n, t) { return n + t.split(String.fromCharCode(10)).length; }, 0)); }).catch(function () { done(DECK_LINES); });
 }
 SC.you = {
-  ctx: 90, lead: [1650, 1012, 18, -1], al: 'br', hello: ['This part is about YOU.'],
+  ctx: 90, lead: [1650, 1012, 15, -1], al: 'br', bw: 1150, hello: ['This part is about YOU.'],
   enter: function () { Q('#you .rev').forEach(hide); Q('#pipe div').forEach(function (p) { p.classList.remove('on'); }); },
   beats: [0, 1, 2, 3].map(function (i) {
     return function () { show(Q('#you .role')[i]); L.hush(); L.go(352 + i * 410, 1012, { speed: 1800, then: function () { L.hop(); P([rolesay[i]], i === 0 ? 'bl' : i === 3 ? 'br' : ' '); } }); };
@@ -831,6 +834,8 @@ setInterval(function () {
 }, 5200);
 
 (function tick() { pushWords(); var sc = SC[ids[cur]]; if (sc && sc.tick) sc.tick(); requestAnimationFrame(tick); })();
+/* an image that failed to load (a busy local server) gets one more try */
+window.addEventListener('load', function () { [].forEach.call(document.images, function (i) { if (i.complete && !i.naturalWidth) i.src = i.src.split('?')[0] + '?r=1'; }); });
 window.DECK = { go: go, next: next, back: back, replay: replay, L: L, S: S, M: M, state: function () { return { scene: ids[cur], step: step, beats: beats().length, ask: !!askS, prompt: !!promptS, ctx: ctxNow, q: QD.length, hist: (HIST[ids[cur]] || []).length }; } };
 /* what the second scene file builds on */
 window.D = { $: $, Q: Q, L: L, S: S, M: M, P: P, SC: SC, stage: stage, cast: cast, later: later, every: every, unsched: unsched, anim: anim, show: show, hide: hide, esc: esc, ask: ask,

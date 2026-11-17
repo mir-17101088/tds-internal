@@ -1,4 +1,46 @@
-# >>> RESUME HERE (17 November 2026, about 4:30 AM, v3 built and pushed)
+# >>> RESUME HERE (17 November 2026, morning QA pass by the scheduled task `tds-deck-qa`, pushed)
+
+## QA pass, 17 Nov morning (read this first)
+**Checked (real Chrome, Playwright):**
+- `tools/smoke.py`: 22 scenes, every line "OK", errors 0 (before and after the fixes).
+- `tools/ends.py` contact sheets at 35%, 70% and the end of every scene; the end states again at 3840x2160 (the stage scales cleanly, same layout).
+- **Every press of every scene** (298 presses) with the new `python -I tools/overlaps.py [scene ...]`: it steps back through each press and lists bubbles or sprites that cover slide text, another sprite, a WhatsApp card, or leave the stage. Before: 144 findings. After: 24, all listed under "left as is".
+- Finale played live twice: `tools/finale_check.py` says "problems: none"; nine frames over 36 s looked at. The three cards stay, "Thank you." appears.
+- The three worlds in `imagine` (space, forest, river) looked at.
+
+**Fixed (positions and bubble widths only; no wording, order, names or figures changed):**
+- `under`: mascot smaller and further right, so its bubble no longer covers "Plus 1,593 lines of build and QA scripts."
+- `harness`: narrower bubbles, mascot a little left in the right lane; no bubble over Mir's head.
+- `tools`: mascot 22 px lower; the bubble no longer covers the "Files" label.
+- `loop`: the "Agentic loop" definition line moved to the right of the title (the mascot's bubble at the Plan station used to cover it for ten presses). The mascot now stands beside each station label, not on it (`LSTN`, `LBW` in `deck.js`), with narrow bubbles that stay off the failing-sizes count. The last beat's bubble sits above the mascot, not over "Plan" and the count.
+- `md`: the two helpers' bubbles are right-anchored and narrow; they no longer cover the lead mascot or Mir.
+- `team`: narrower bubble, clear of the plan list and the Haiku cards.
+- `review`: the builder stands 12 px lower; the reviewer's bubble is narrower (clear of "6 failed or partly").
+- `argue`: the mascot stops further left when it inspects the phone; no bubble over Mir's head.
+- `fired`: the helper's bubble opens to the left, clear of the memory log.
+- `cheap`: Opus, Sonnet and Haiku stand to the right of the text (Opus used to stand on "Haiku does the literal work."); the last bubble no longer hides "Keep the cache warm".
+- `cache`: mascot at the far left, a little smaller, narrower bubble; the status line under the clock ("Warm." / "Six minutes left…" / "Cold…") is never covered. Mir's bubble narrower.
+- `learn`: narrower mascot bubble (clear of the closing line); Mir further right (his bubble only touches the phone's bezel).
+- `you`: mascot a little smaller with a one-line bubble; the pipeline labels are no longer covered.
+- `imagine` (space): the idea headline moved below the floating mascot (the mascot used to sit on "The night sky over Dhaka").
+- `making`: mascot and helpers moved right; the bubble no longer covers "Version one: text on slides."; the closing line moved 60 px right.
+- `deck.js`: an image that fails to load gets one retry on page load (one of about 15 local loads showed five broken images once; 12 fresh loads afterwards were clean).
+
+**Left as is (known, minor):**
+- `loop`: Mir's bubbles ("Looks good. Push it…", "I SAID do it yourself!") cover two lines of the terminal log.
+- `review`: the lead's bubble comes within 12 px of the builder's head (no visible overlap).
+- `under`: bubbles pass over the scrolling code wall (decoration).
+- `skill`: the mascot's bubble sits on the before/after picture. `making`: one bubble clips a corner of the version-one screenshot.
+- `cache`, `harness`: while the type-it prompt is open, the command line covers the mascot's legs (it was like this before).
+- `finale`: two helpers' bubbles cross each other for a moment during the panic run (cards never touched).
+
+**NOT checked:** the real TV and clicker, a timed rehearsal, sound/asides, Vercel's live copy, clicking and dragging with a mouse (the before/after handle in `skill`, clicking sprites).
+
+`TALKING-POINTS.md` is written (project folder only; `sync_repo.py` does not copy it to the repo).
+
+---
+
+# Earlier state (17 November 2026, about 4:30 AM, v3 built and pushed)
 
 Internal Daily Star session "Vibe Coding", **today 17 Nov 2026, 2:30 PM**, 7th floor, on a big TV. Mir asked for the v3 rebuild in one long message, then slept. He authorised: work without asking, push to GitHub (`mir-17101088/tds-internal`), he deploys to Vercel himself.
 
@@ -6,8 +48,8 @@ Internal Daily Star session "Vibe Coding", **today 17 Nov 2026, 2:30 PM**, 7th f
 - **v3 is in `deck/`**: `index.html` (22 scenes + speaker notes), `deck.css` + `deck2.css`, `mascot.js` (mascot, helpers and Mir's low-poly avatar), `deck.js` (engine + the 13 older scenes), `scenes2.js` (the scenes with Mir in them + the ending). v1 kept as `deck/index-v1.html`.
 - **Repo**: the clone is the folder `tds internal/` (remote `origin`, branch `main`). The site sits at the repo ROOT so Vercel needs no settings. Copy with `python tools/sync_repo.py`, then commit and push inside `tds internal/`.
 - **Checked (17 Nov, real Chrome, 1920x1080)**: `python -I tools/smoke.py` plays all 22 scenes to the end and steps back through every press: 0 JS errors, back-step OK everywhere (314 presses). `python -I tools/ends.py <dir>` end-state screenshots of all 22 scenes: looked at, layout fixed.
-- **NOT checked**: the screens in the middle of each scene press by press (bubble overlaps), the three worlds in `imagine`, the finale mid-run, 3840x2160, a timed rehearsal, the real TV and clicker. The 5-hour usage limit ran out; a scheduled task continues this after the reset.
-- Talking points: each slide's `data-notes` (press N). `TALKING-POINTS.md` not written yet.
+- Mid-scene, press-by-press, finale and 4K checks: done in the morning QA pass (top of this file). Still not checked: a timed rehearsal, the real TV and clicker.
+- Talking points: each slide's `data-notes` (press N) and `TALKING-POINTS.md`.
 
 ## Run it
 ```bash
@@ -44,7 +86,7 @@ open (Mir "screams": WHERE IS THE HOUSE STYLE) · under · harness (what a harne
 - https://campaign.thedailystar.net/energy-crisis/ (screenshots in `deck/img/energy-*.webp`, figures in the report sheets and the chain).
 
 ## Open
-0. **Mir looked at the deck early on 17 Nov and saw overlaps. Top priority for the next session: go through EVERY scene press by press and fix every overlap properly (a bubble over text or a panel, a sprite over text, a panel over a panel), then check again.** Already removed at his request: the 'He asked me to draw it this way' line (open) and the Martin da WhatsApp nudge (making). Do not bring them back.
-1. Mid-scene visual QA + 4K check (scheduled task `tds-deck-qa`), then `TALKING-POINTS.md`.
+0. Overlap pass done on 17 Nov morning (see the top; `python -I tools/overlaps.py` repeats it). Already removed at his request: the 'He asked me to draw it this way' line (open) and the Martin da WhatsApp nudge (making). Do not bring them back.
+1. Done: mid-scene visual QA, 4K check, `TALKING-POINTS.md`.
 2. The talk is now about 30 minutes if every line is played. Shortest cuts: `fired`, `labs`, `cheap`, `tools` (press `]` to skip a scene).
 3. Rehearse once with the clicker on the TV.

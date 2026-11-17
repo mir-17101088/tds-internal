@@ -28,7 +28,7 @@ function chatRun(text) {
     { s: M, t: 'I am the hands. The eyes. AND the test suite.', m: 'tired', al: 'br', f: function () { carry(3); } }], 'bl');
 }
 SC.harness = {
-  ctx: 110, lead: [350, 985, 13], al: 'bl', bw: 600, hello: [['Hello? In here I can only talk.', 'confused']],
+  ctx: 110, lead: [350, 985, 13], al: 'bl', bw: 440, hello: [['Hello? In here I can only talk.', 'confused']],
   enter: function () {
     $('hxl1').innerHTML = ''; $('hxl2').innerHTML = ''; cp(0); task = 'Fix the hero on small phones.';
     $('jar2').classList.remove('off'); hide($('hxline')); $('hx-harn').classList.add('dim'); $('hx-chat').classList.remove('dim');
@@ -45,7 +45,8 @@ SC.harness = {
     function () {
       hushAll(); $('jar2').classList.add('off'); $('hx-harn').classList.remove('dim'); $('hx-chat').classList.add('dim'); L.mood('joy');
       M.hold('mug'); M.mood('idle'); M.go(1640, 1008, { speed: 900, face: -1 });
-      L.go(1240, 990, { speed: 1500, then: function () {
+      L.el.style.setProperty('--bw', '470px');
+      L.go(1170, 990, { speed: 1500, then: function () {
         hx('hxl2', 'Mir', task);
         P([['Same request. This time, I have hands.', 'joy'],
           ['I read the file myself.', 'happy', function () { hx('hxl2', '●', 'Read(css/story.css)'); L.chip('Read(css/story.css)'); L.hold('folder'); }],
@@ -106,10 +107,10 @@ SC.md = {
         ['This is round seven. I counted.', 'stern']]);
     },
     function () {
-      S[0].size(7).spawn(1250, 1012); S[1].size(7).spawn(1400, 1012); M.mood('read'); M.hold('paper');
+      S[0].size(7).spawn(1250, 1012); S[1].size(7).spawn(1400, 1012); S[0].el.style.setProperty('--bw', '360px'); S[1].el.style.setProperty('--bw', '420px'); M.mood('read'); M.hold('paper');
       P([['Review time! Here is my report.', 'joy', function () { flood(0, 3, L); }],
-        { s: S[0], t: 'And the QA screenshots!', m: 'joy', f: function () { flood(3, 7, S[0]); } },
-        { s: S[1], t: 'And the fact-check! And three evaluations!', m: 'joy', f: function () { flood(7, 12, S[1]); M.mood('tired'); } },
+        { s: S[0], t: 'And the QA screenshots!', m: 'joy', al: 'br', f: function () { flood(3, 7, S[0]); } },
+        { s: S[1], t: 'And the fact-check! And three evaluations!', m: 'joy', al: 'br', f: function () { flood(7, 12, S[1]); M.mood('tired'); } },
         ['And the speed runs. Both of them.', 'happy', function () { flood(12, 16, L); M.mood('panic'); }],
         { s: M, t: 'ENOUGH!', m: 'angry', al: 'bl shout', f: function () { scatter(); M.hop(); M.hold(); [S[0], S[1], L].forEach(function (s) { s.mood('wide'); }); stage.classList.add('quake'); later(function () { stage.classList.remove('quake'); }, 600); } },
         { s: M, t: 'Five lines. What needs ME?', m: 'angry', al: 'bl' },
@@ -135,7 +136,7 @@ SC.argue = {
       P([['53 screen sizes. Zero fail. It is finished.', 'proud', function () { M.mood(); ex('Bash(sweep 53 screen sizes)   0 FAIL', 'the test log'); }],
         { s: M, t: 'It stutters on my old phone.', m: 'think', al: 'br', f: function () { M.hold('phone'); } }, ['My numbers say it is fine.', 'proud'],
         { s: M, t: 'Scroll it. On the ACTUAL phone.', m: 'angry', al: 'br' },
-        ['…', 'think', function () { L.hold('lens'); L.go(1090, 1008, { speed: 900 }); }],
+        ['…', 'think', function () { L.hold('lens'); L.go(815, 1008, { speed: 900 }); }],
         ['Oh. It stutters.', 'wide', function () { ex('Old Android: the scroll stutters. No test caught it.', 'seen on a real phone', 1); }],
         ['You were right. I was only right on paper.', 'sad', function () { score(1, 1); M.hop(); M.mood('smug'); }]]);
     },
@@ -154,7 +155,7 @@ function cache(m) {
 function cacheTo(v, ms) { anim(cmin, v, ms, function (x) { cmin = x; cache(x); }, 'cache'); }
 function bar(id, pct, label) { $(id).style.width = pct + '%'; $(id + 'n').textContent = label; }
 SC.cache = {
-  ctx: 400, lead: [400, 1012, 15], al: 'bl', bw: 640, hello: [['The third habit: keep me warm.', 'happy']],
+  ctx: 400, lead: [300, 1012, 13], al: 'bl', bw: 500, hello: [['The third habit: keep me warm.', 'happy']],
   enter: function () {
     cmin = 0; cache(0); hide($('clock')); hide($('cstate')); hide($('bars')); hide($('flask')); bar('bw', 0, ''); bar('bc', 0, ''); $('barnote').textContent = ''; $('stk').classList.remove('grow');
   },
@@ -170,7 +171,7 @@ SC.cache = {
         ['Every message resets the hour.', 'happy']]);
     },
     function () {
-      P([['Minute 54!', 'panic', function () { cacheTo(54, 1600); mirIn(2050, 1008, -1); M.hold('mug'); M.go(1560, 1008, { dur: .9, face: -1 }); }],
+      P([['Minute 54!', 'panic', function () { cacheTo(54, 1600); mirIn(2050, 1008, -1); M.el.style.setProperty('--bw', '540px'); M.hold('mug'); M.go(1560, 1008, { dur: .9, face: -1 }); }],
         ['Mir! Type something. Anything. NOW!', 'panic', function () {
           M.hold(); M.el.classList.add('typing');
           openPrompt({ ghost: 'continue', done: function (t) {
@@ -212,8 +213,8 @@ function dots(mode) {
 function phone(cap, mode, cls) { $('phcap').textContent = cap; dots(mode); $('scr').className = 'scr ' + (cls || ''); }
 function lnode(n) { Q('#lloop div').forEach(function (d, i) { d.classList.toggle('on', i <= n); }); }
 SC.learn = {
-  ctx: 85, lead: [960, 1012, 14], bw: 440, hello: [['Publishing is not the end. It is homework.', 'happy']],
-  enter: function () { lnode(-1); unsched(lty); $('skpre').textContent = ''; hide($('skdiff')); hide($('phone')); hide($('lline')); phone('', 0); mirIn(1720, 1008, -1); M.el.style.setProperty('--bw', '340px'); },
+  ctx: 85, lead: [990, 1012, 14], bw: 380, hello: [['Publishing is not the end. It is homework.', 'happy']],
+  enter: function () { lnode(-1); unsched(lty); $('skpre').textContent = ''; hide($('skdiff')); hide($('phone')); hide($('lline')); phone('', 0); mirIn(1780, 1008, -1); M.el.style.setProperty('--bw', '340px'); },
   beats: [
     function () {
       P([['The story goes live. Then people react.', 'happy', function () { lnode(1); }], ['The desk. The bosses. Readers.', 'happy'],
@@ -279,7 +280,7 @@ SC.imagine = {
 var NUDGES = ['Bigger mascot.', 'More chatter.', 'A line on every press.', 'The back arrow should go ONE step back.'];
 function nud(i) { var c = el('div', 'nudge', D.esc(NUDGES[i])); $('nudges').appendChild(c); void c.offsetWidth; c.classList.add('show'); }
 SC.making = {
-  ctx: 100, lead: [470, 1012, 16], al: 'bl', bw: 620, hello: [['One more secret.', 'happy']],
+  ctx: 100, lead: [690, 1012, 16], al: 'bl', bw: 620, hello: [['One more secret.', 'happy']],
   enter: function () { hide($('v1')); $('nudges').innerHTML = ''; hide($('selfc')); hide($('mkline')); $('v1').classList.remove('alive'); },
   beats: [
     function () {
@@ -294,7 +295,7 @@ SC.making = {
       P(NUDGES.map(function (t, i) { return { s: M, t: t, m: i === 3 ? 'angry' : 'think', al: 'br', f: function () { nud(i); } }; }).concat([['He kept pushing. I kept building.', 'happy', function () { M.mood('smug'); }]]));
     },
     function () {
-      P([['I had help. Helpers pressed every key and checked every screen.', 'happy', function () { M.mood(); [0, 1, 2].forEach(function (i) { S[i].size(7).spawn(760 + i * 130, 1012, function () { S[i].mood('joy'); }); }); }],
+      P([['I had help. Helpers pressed every key and checked every screen.', 'happy', function () { M.mood(); [0, 1, 2].forEach(function (i) { S[i].size(7).spawn(1000 + i * 130, 1012, function () { S[i].mood('joy'); }); }); }],
         ['And a handover file. Every night I started where I had stopped.', 'happy', function () { L.hold('handover'); }]]);
     },
     function () {
